@@ -174,8 +174,8 @@ gitment:
 # https://github.com/gitalk/gitalk#install
 gitalk:
   owner: MyStudytime
-  repo: studytime-Blog
-  clientID: 4d7d6434cf0d65549767
-  clientSecret: 14f338ef08c41f688139e64dbd404ada9db19544
+  repo:  blog-comments
+  clientID: f2951c434919f3ebb0da
+  clientSecret: 3846a22cae7d971aa40ae159b53c3152f9ff6cd2
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
