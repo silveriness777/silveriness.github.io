@@ -7,7 +7,7 @@ keywords: bigdata,Spark,Spark学习之路,Spark系列文章,Spark初识
 ---
 
 
-## Spark初识
+## Spark产生背景、简介、特点、现有使用场景等做简单的介绍解析。
 
 ### 什么是Spark
 [官网地址：http://spark.apache.org/](http://spark.apache.org/)
