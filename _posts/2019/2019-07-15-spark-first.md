@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Spark系列文章:Spark初识
+title:  Spark系列文章（一）:Spark初识
 category: bigdata 
 tags: [bigdata]
 keywords: bigdata,Spark,Spark学习之路,Spark系列文章,Spark初识
