@@ -10,8 +10,8 @@ title:  studytime
 subtitle: 分享技术，品味人生
 name: studytime
 email: b_aihe@163.com
-description: 本站是白贺的技术分享博客。内容涵盖生活故事、PHP后端技术、Java后端技术、大数据、bigData、Spring Boot、Spring Cloud、微服务架构、大数据演进、高可用架构、中间件使用、系统监控等相关的研究与知识分享。
-keywords: studytime,白贺,Bai He,Big Data, bigdata, Spring,Spring Boot,Spring Cloud,MongoDB,Jvm,Docker,生活故事,架构,大数据,一线,FastDFS,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客,Java,Python,
+description: 本站是白贺的技术分享博客。内容涵盖生活故事、PHP后端技术、Java后端技术、大数据、大数据生态、bigData、Spring Boot、微服务架构、高可用架构等相关的研究与知识分享。
+keywords: studytime,白贺,Bai He,Big Data, bigdata,Java,Spark,Sqoop,Hadoop,Kafka,Flume、Hive、Hbase、Spring,Spring Boot,SJvm,生活故事,架构,大数据,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客
 encoding: "utf-8"
 favicon: favicon.png
 static-url: https://static.studytime.xin/studytime-Blog
@@ -32,7 +32,6 @@ plugins:
   - kramdown
   - jekyll-github-metadata
   - jekyll-octicons
-  - jekyll-sitemap
 
 # Build settings
 markdown: kramdown
@@ -141,12 +140,6 @@ side_bar_repo_limit: 6 # Number of repos to show
 # provider : google
 #   google :
 #     tracking_id : ''  # ex. UA-72165600-X
-
-
-leancloud:
-  enable: true
-  app_id: LK6GLVKOlnjJlJgDi644sOdY-gzGzoHsz
-  app_key: BIE0oEoePyYBgMWj87XWvDoI
 
 
 # For about.html. Fell free to create your own!
