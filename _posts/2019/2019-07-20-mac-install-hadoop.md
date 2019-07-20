@@ -16,8 +16,7 @@ Hadoop运行环境基于Java、所以Java环境是必须的。至于怎么安装
 
 ![](https://static.studytime.xin/image/articles/20190720234625.png)
 
-![12a2dd0ca44dd22783a64ef00a7818d5.png](evernotecid://C4517C32-59D9-49AC-9F7B-2F7E53B56486/appyinxiangcom/18253885/ENResource/p118)
-
+![](https://static.studytime.xin/image/articles/20190720235630.png)
 
 避免使用hadoop命令时，多次输入密码
 ```
