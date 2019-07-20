@@ -22,7 +22,7 @@ url: https://www.studytime.xin
 
 sfblog_url: https://segmentfault.com/u/baihe
 base_url: https://www.studytime.xin
-baseurl: https://www.studytime.xin
+baseurl:
 enforce_ssl: https://www.studytime.xin
 
 ## Gem
