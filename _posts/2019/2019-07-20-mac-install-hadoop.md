@@ -12,7 +12,7 @@ keywords: bigdata,Haoop,mac Hadoop,Hadoop安装,hadoop
 Hadoop运行环境基于Java、所以Java环境是必须的。至于怎么安装JDK、自行谷歌，各位小哥，此处不做赘述。
 
 ### 配置ssh 
-开启mac远程登录功能，且将当前用户加入允许的用户列表中
+打开系统偏好设置-->共享--->远程登陆勾选上,且将当前hadoop运营用户加入允许远程登录用户列表中
 
 ![](https://static.studytime.xin/image/articles/20190720234625.png)
 
