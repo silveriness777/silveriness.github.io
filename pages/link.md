@@ -4,7 +4,7 @@ title: Link
 titlebar: Link
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; Resource link
 menu: Link
-permalink: /link
+permalink: /link.html
 url: /link.html
 ---
 

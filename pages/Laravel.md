@@ -5,7 +5,7 @@ titlebar: Laravel
 subtitle: <span class="mega-octicon octicon-fold"></span>&nbsp;&nbsp; Laravel系列文章
 menu: Laravel
 css: ['blog-page.css']
-permalink: /Laravel
+permalink: /Laravel.html
 url: /Laravel.html
 ---
 

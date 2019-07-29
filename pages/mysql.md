@@ -5,7 +5,7 @@ titlebar: mysql
 subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; mysql系列文章
 menu: mysql
 css: ['blog-page.css']
-permalink: /mysql
+permalink: /mysql.html
 url: /mysql.html
 ---
 
