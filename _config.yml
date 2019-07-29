@@ -59,7 +59,7 @@ syntax_highlighter_opts:
 
 # Pagination
 paginate: 10
-paginate_path: ':num'
+paginate_path: 'page:num'
 
 # Navigation. If you do not like these modules, just remove them :D
 navs:
