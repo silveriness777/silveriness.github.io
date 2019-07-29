@@ -8,6 +8,7 @@ subtitle: <span class="mega-octicon octicon-cloud-download"></span>&nbsp;&nbsp;
 menu: bigdata
 css: ['blog-page.css']
 permalink: /bigdata.html
+url: /bigdata.html
 keywords: 大数据, Hive, 大数据学习, 大数据案例,
 ---
 
