@@ -8,6 +8,7 @@ subtitle: <span class="mega-octicon octicon-cloud-download"></span>&nbsp;&nbsp;
 menu: Linux
 css: ['blog-page.css']
 permalink: /Linux
+url: /Linux.html
 keywords: Linux 教程,Linux 示例,Linux 学习,LNMP,运维
 ---
 

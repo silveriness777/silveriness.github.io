@@ -6,6 +6,7 @@ subtitle: <span class="mega-octicon octicon-fold"></span>&nbsp;&nbsp; Laravel系
 menu: Laravel
 css: ['blog-page.css']
 permalink: /Laravel
+url: /Laravel.html
 ---
 
 <div class="row">

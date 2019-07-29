@@ -6,6 +6,7 @@ subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; mysql系
 menu: mysql
 css: ['blog-page.css']
 permalink: /mysql
+url: /mysql.html
 ---
 
 <div class="row">

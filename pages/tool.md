@@ -6,6 +6,7 @@ subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; Toolç³»å
 menu: Tool
 css: ['blog-page.css']
 permalink: /Tool
+url: /Tool.html
 ---
 
 <div class="row">

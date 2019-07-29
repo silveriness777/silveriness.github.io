@@ -6,6 +6,7 @@ subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; Take not
 menu: blog
 css: ['blog-page.css']
 permalink: /blog
+url: /blog.html
 ---
 
 

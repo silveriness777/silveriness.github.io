@@ -6,6 +6,7 @@ subtitle:
 <span class="mega-octicon octicon-calendar"></span>&nbsp;&nbsp;menu: archives
 css: ['blog-page.css']
 permalink: /archives.html
+url: /archives.html
 ---
 
 <ul class="archives-list">
