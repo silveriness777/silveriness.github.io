@@ -7,7 +7,7 @@ subtitle: <span class="mega-octicon octicon-cloud-download"></span>&nbsp;&nbsp;
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 menu: bigdata
 css: ['blog-page.css']
-permalink: /bigdata
+permalink: /bigdata.html
 keywords: 大数据, Hive, 大数据学习, 大数据案例,
 ---
 
