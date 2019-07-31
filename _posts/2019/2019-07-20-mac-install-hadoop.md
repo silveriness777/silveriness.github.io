@@ -6,7 +6,9 @@ tags: [bigdata]
 keywords: bigdata,Haoop,mac Hadoop,Hadoop安装,hadoop
 ---
 
-## Hadoop环境的搭建和配置还是有些麻烦的，尤其是mac,此处整理下自己搭建的过程和步骤。
+Hadoop环境的搭建和配置还是有些麻烦的，尤其是mac,此处整理下自己搭建的过程和步骤。
+
+## 目录
 
 ### 安装 Java
 Hadoop运行环境基于Java、所以Java环境是必须的。至于怎么安装JDK、自行谷歌，各位小哥，此处不做赘述。
