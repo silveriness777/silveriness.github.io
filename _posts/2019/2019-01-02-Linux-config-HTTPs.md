@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  博客搭建系列:阿里云免费ssl证书配置网站https
+title:  搭建个人博客（二）:阿里云免费ssl证书配置网站https
 category: Blog 
 tags: [Blog]
 ---
