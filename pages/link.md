@@ -11,10 +11,15 @@ url: /link.html
 ## 友情链接
 
 - [纯洁的微笑](http://www.ityouknow.com/) - 分享技术，品味人生
+- [iBooker](https://docs.apachecn.org/) - iBooker-可以允许不完美，但不能不做
+
+## 技术网站
+- [Spark中文文档](http://spark.apachecn.org/#/) - Spark中文文档
+- [laravel](https://laravel-china.org/) - laravelChina
+- [Hbase中文文档](http://abloz.com/hbase/book.html/) - Hbase中文文档
+- [presto文档](https://prestodb.github.io/) - presto文档
 
 ## 推荐网站
-
-- [laravel](https://laravel-china.org/) - laravelChina
 - [Spring Boot中文导航](http://springboot.fun/) - Spring Boot的资源导航网站    
 - [Spring Cloud中文导航](http://springcloud.fun/) - Spring Cloud的资源导航网站    
 - [MD工具](http://relatos.top/md/) - markdown转发html在线工具  
@@ -22,9 +27,7 @@ url: /link.html
 - [公众号编辑器](http://md.ityouknow.com/) - 可以以优雅的方式在微信公众号去发布markdown文章
 
 
-
 ## 个人链接
-
 - [studytime](https://www.studytime.xin/) - 个人博客
 - [github](https://github.com/MyStudytime) -  github地址
 - [Segmentfault](https://segmentfault.com/u/baihe) - 技术博客

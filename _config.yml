@@ -101,9 +101,6 @@ labels:
   - href: /Linux.html
     name: Linux
 
-  - href: /Laravel.html
-    name: Laravel
-
   - href: /mysql.html
     name: mysql
 
@@ -115,15 +112,14 @@ labels:
 
 # selected articles
 classes:
+  - href: /bigdata.html
+      name: 大数据
+      describe: 大数据浪潮
 
   -
     href: /Tool.html
     name: 工具
     describe: 工欲善其事，必先利其器
-
-  - href: /bigdata.html
-    name: 大数据
-    describe: 大数据浪潮
 
   - href: /mysql.html
     name: mysql
@@ -156,19 +152,6 @@ skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, ExpressJS, MongoDB, Re
 # ---------------- #
 # support provider: disqus, gitment, gitalk
 comments_provider: gitalk
-# !!!重要!!! 请修改下面这些信息为你自己申请的
-# !!!Important!!! Please modify infos below to yours
-# https://disqus.com
-disqus:
-    username: studytime
-# https://imsun.net/posts/gitment-introduction/
-gitment:
-    owner: studytime
-    repo: blog-comments
-    oauth:
-        client_id: 61bfc53d957e74e78f8f
-        client_secret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
-# https://github.com/gitalk/gitalk#install
 gitalk:
   owner: MyStudytime
   repo:  blog-comments
