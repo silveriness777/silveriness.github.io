@@ -132,13 +132,13 @@ classes:
 subscribe_rss: /feed.xml
 
 # Sidebar to show popular repo
-side_bar_repo_limit: 6 # Number of repos to show
+side_bar_repo_limit: 5 # Number of repos to show
 
 # Google Analytics
 # analytics :
 # provider : google
-#   google :
-#     tracking_id : ''  # ex. UA-72165600-X
+google :
+  tracking_id : 'UA-131499684-1'
 
 
 # For about.html. Fell free to create your own!
@@ -157,5 +157,3 @@ gitalk:
   repo:  blog-comments
   clientID: f2951c434919f3ebb0da
   clientSecret: 3846a22cae7d971aa40ae159b53c3152f9ff6cd2
-# 在使用其它评论组件时可点击显示 Disqus
-lazy_load_disqus : false
