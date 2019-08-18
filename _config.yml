@@ -104,15 +104,13 @@ labels:
 
 # selected articles
 classes:
+  - href: /bigdata.html
+    name: 大数据
+    describe: 大数据浪潮
   -
     href: /Tool.html
     name: 工具
     describe: 工欲善其事，必先利其器
-
-  - href: /bigdata.html
-    name: 大数据
-    describe: 大数据浪潮
-
   - href: /mysql.html
     name: mysql
     describe: 数据库
