@@ -12,6 +12,7 @@ url: /link.html
 
 - [纯洁的微笑](http://www.ityouknow.com/) - 分享技术，品味人生
 - [iBooker](https://docs.apachecn.org/) - iBooker-可以允许不完美，但不能不做
+- [ 程序猿DD](http://blog.didispace.com) -  程序猿DD
 
 ## 技术网站
 - [Spark中文文档](http://spark.apachecn.org/#/) - Spark中文文档
