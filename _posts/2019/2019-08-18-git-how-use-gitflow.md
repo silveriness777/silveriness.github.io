@@ -82,7 +82,6 @@ git checkout -b develop origin/develop
 现在每个开发都有了这些历史分支的本地拷贝。
 
 ### 小红和小明开始开发新功能
-
 ![](https://static.studytime.xin/image/articles/spring-boot20190819223315.png)
 
 这个示例中，小红和小明开始各自的功能开发。他们需要为各自的功能创建相应的分支。新分支不是基于master分支，而是应该基于develop分支：
@@ -98,9 +97,10 @@ git status
 git add
 git commit
 ```
-#### 小红完成功能开发
-![](https://static.studytime.xin/image/articles/spring-boot20190819223330.png)
 
+#### 小红完成功能开发
+
+![](https://static.studytime.xin/image/articles/spring-boot20190819223330.png)
 
 添加了提交后，小红觉得她的功能OK了。如果团队使用Pull Requests，这时候可以发起一个用于合并到develop分支。否则她可以直接合并到她本地的develop分支后push到中央仓库：
 
@@ -153,7 +153,6 @@ Git有提供各种勾子（hook），即仓库有事件发生时触发执行的�
 
 #### 最终用户发现Bug
 ![](https://static.studytime.xin/image/articles/spring-boot20190819223427.png)
-
 
 对外发布后，小红回去和小明一起做下个发布的新功能开发，直到有最终用户开了一个Ticket抱怨当前版本的一个Bug。为了处理Bug，小红（或小明）从master分支上拉出了一个维护分支，提交修改以解决问题，然后直接合并回master分支：
 
