@@ -35,6 +35,7 @@ Commands are grouped. Type 'help "COMMAND_GROUP"', (e.g. 'help "general"') for h
 ```
 
 3. get 查看单独的某个命令的帮助
+
 ```
 hbase(main):001:0> help 'get'
 
