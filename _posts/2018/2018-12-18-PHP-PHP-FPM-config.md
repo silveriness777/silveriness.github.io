@@ -12,7 +12,7 @@ php-fpm的安装目录
 
 centos等linux平台
 
-```$xslt
+```
 /usr/local/php/php
 /usr/local/php/etc/php.ini
 /usr/local/php/sbin/php-fpm

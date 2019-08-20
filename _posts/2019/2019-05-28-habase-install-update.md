@@ -95,7 +95,7 @@ export HBASE_MANAGES_ZK=false
 ### 重启hdfs
 ```
 stop-dfs.sh
-start-df.sh
+start-dfs.sh
 ```
 
 ### 启动HBase
@@ -106,7 +106,7 @@ start-df.sh
 
 
 ### 特殊说明
-bigdata 代表主机名
+`bigdata` 代表主机名
 
 
 
