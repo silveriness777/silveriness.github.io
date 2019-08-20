@@ -37,25 +37,6 @@ Commands are grouped. Type 'help "COMMAND_GROUP"', (e.g. 'help "general"') for h
 3. get 查看单独的某个命令的帮助
 ```
 hbase(main):001:0> help 'get'
-Get row or cell contents; pass table name, row, and optionally
-a dictionary of column(s), timestamp, timerange and versions. Examples:
-
-  hbase> get 'ns1:t1', 'r1'
-  hbase> get 't1', 'r1'
-  hbase> get 't1', 'r1', {TIMERANGE => [ts1, ts2]}
-  hbase> get 't1', 'r1', {COLUMN => 'c1'}
-  hbase> get 't1', 'r1', {COLUMN => ['c1', 'c2', 'c3']}
-  hbase> get 't1', 'r1', {COLUMN => 'c1', TIMESTAMP => ts1}
-  hbase> get 't1', 'r1', {COLUMN => 'c1', TIMERANGE => [ts1, ts2], VERSIONS => 4}
-  hbase> get 't1', 'r1', {COLUMN => 'c1', TIMESTAMP => ts1, VERSIONS => 4}
-  hbase> get 't1', 'r1', {FILTER => "ValueFilter(=, 'binary:abc')"}
-  hbase> get 't1', 'r1', 'c1'
-  hbase> get 't1', 'r1', 'c1', 'c2'
-  hbase> get 't1', 'r1', ['c1', 'c2']
-  hbase> get 't1', 'r1', {COLUMN => 'c1', ATTRIBUTES => {'mykey'=>'myvalue'}}
-  hbase> get 't1', 'r1', {COLUMN => 'c1', AUTHORIZATIONS => ['PRIVATE','SECRET']}
-  hbase> get 't1', 'r1', {CONSISTENCY => 'TIMELINE'}
-  hbase> get 't1', 'r1', {CONSISTENCY => 'TIMELINE', REGION_REPLICA_ID => 1}
 
 ```
 
@@ -92,6 +73,7 @@ baihe (auth:SIMPLE)
 1. create 创建表 `create 't1', 'f1', 'f2', 'f3'`
 
 ```
+
 # 创建blog表，该表有两个列族：‘article’和‘author’
 hbase(main):004:0> create 'blog','article','author'
 0 row(s) in 1.3010 seconds
@@ -117,7 +99,9 @@ scores
 ```
 
 3. desc 获得表的描述
+
 ```
+
 hbase(main):009:0> describe 'employee'
 Table employee is ENABLED
 employee
@@ -127,11 +111,13 @@ N_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_SCOPE
 {NAME => 'personal', BLOOMFILTER => 'ROW', VERSIONS => '1', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSION => 'NONE',
 MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_SCOPE => '0'}
 2 row(s) in 0.0470 seconds
+
 ```
 
 4. alter 增加列簇、删除列簇
 
 ```
+
 # 更改或添加t1表中的f1列簇,以保持最多5个单元格的VERSIONS
 alter't1'，NAME =>'f1'，VERSIONS => 5
 
@@ -161,22 +147,27 @@ hbase(main):004:0>
 6. exists 查询表是否存在
 
 ```
+
 hbase(main):012:0> exists 'employee'
 Table employee does exist
 0 row(s) in 0.0220 seconds
+
 ```
 
 7. is_enabled 验证表是否enabled
 
 ```
+
 hbase(main):015:0> is_enabled 'employee'
 true
 0 row(s) in 0.0140 seconds
+
 ```
 
 8. 更改表名
 
 ```
+
 需要开启快照功能，在hbase-site.xml文件中添加如下配置项：
 <property>
 <name>hbase.snapshot.enabled</name>
@@ -201,9 +192,11 @@ disable_all ‘t.*’
 10. is_disabled 表是否可用
 
 ```
+
 hbase(main):017:0> is_disabled  'employee'
 false
 0 row(s) in 0.0260 seconds
+
 ```
 
 
