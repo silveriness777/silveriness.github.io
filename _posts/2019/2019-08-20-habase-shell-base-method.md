@@ -5,7 +5,9 @@ category: bigdata
 tags: [bigdata]
 keywords: bigdata,Hbase,hbase,Hbase shell,Hbase中文文档，学习之路
 ---
+
 本内容整理了部分常用命令、以及实验案例。Hbase有大量命令，此处只列举出部分。更多使用案例和方法，`list`命令已经有很好的支持。
+
 
 ## 目录
 
@@ -59,7 +61,6 @@ status 查看状态
 ```
 hbase(main):002:0> status
 1 active master, 0 backup masters, 1 servers, 0 dead, 5.0000 average load
-
 ```
 
 version 查看版本
@@ -67,7 +68,6 @@ version 查看版本
 ```
 hbase(main):003:0> version
 1.2.4, r67592f3d062743907f8c5ae00dbbe1ae4f69e5af, Tue Oct 25 18:10:20 CDT 2016
-
 ```
 
 whoami 显示当前的Hbase用户
@@ -88,7 +88,6 @@ hbase(main):004:0> create 'blog','article','author'
 0 row(s) in 1.3010 seconds
 
 => Hbase::Table - blog
-
 ```
 
 list 列出所有表 
@@ -98,14 +97,11 @@ list 列出所有表
 
 ```
 hbase(main):005:0> list
-
 ```
 
 desc 获得表的描述
-
 ```
 hbase(main):009:0> describe 'employee'
-
 ```
 
 alter 增加列簇、删除列簇
@@ -121,7 +117,6 @@ alter't1'，'f1'，{NAME =>'f2'，IN_MEMORY => true}，{NAME =>'f3'，VERSIONS =
 alter 't1',NAME=>'f1',METHOD=>'delete'
 
 # 更改范围相关属性MAX_FILESIZE，READONLY，MEMSTORE_FLUSHSIZE，DEFERRED_LOG_FLUSH；可以考虑将改属性放置最后
-
 ```
 
 
@@ -136,7 +131,6 @@ hbase(main):003:0> drop 'blog'
 0 row(s) in 1.2920 seconds
 
 hbase(main):004:0>
-
 ```
 
 exists 查询表是否存在
@@ -170,7 +164,6 @@ hbase shell> snapshot 'tableName', 'tableSnapshot'
 hbase shell> clone_snapshot 'tableSnapshot', 'newTableName'
 hbase shell> delete_snapshot 'tableSnapshot'
 hbase shell> drop 'tableName'
-
 ```
 
 disable_all 下线匹配到的数据表
@@ -183,7 +176,6 @@ is_disabled 表是否可用
 
 ```
 hbase(main):017:0> is_disabled  'employee'
-
 ```
 
 
@@ -195,11 +187,9 @@ put 插入 `put 't1', 'r1', 'c1', 'value'`
 ```
 put 'blog','blog1','article:title','mapreduce'
 put 'blog','blog2','article:title','hadoop'
-
 ```
 
 get 获取一条数据 `t.get 'r1', {COLUMN => 'c1', TIMESTAMP => ts1, VERSIONS => 4}`
-
 
 ```
 hbase(main):043:0>  get 'blog','blog2',{COLUMN=>['author:name','author:age']}
@@ -219,64 +209,57 @@ delete 'blog','blog3','article:tag'
 
 scan 全表扫描
 
-- 限制展示某些列
+1. 限制展示某些列
+
 ```
 scan ‘t1’,{COLUMNS=>’cf’}
-
 scan ‘t1’,{COLUMNS=>’cf:f1’}
-
 scan ‘t1’,{COLUMNS=>[‘cf1’,’cf2’]}
-
 ```
 
-- 限制查找行数
+2. 限制查找行数
 
 ```
 scan ‘t1’,{COLUMNS=>[‘cf1’,’cf2’],LIMIT=>2}
 ```
 
-- 限制时间范围
+3. 限制时间范围
 
 ```
 scan ‘t1’,{TIMERANGE=>[1448045892646,1448045892647]}
-
 ```
 
-- PrefixFilter:rowKey前缀过滤
+4. PrefixFilter:rowKey前缀过滤
 
 ```
 scan 'blog’,{FILTER=>PrefixFilter(‘blog’)}
 ```
 
-- QualifierFilter:列过滤器,QualifierFilter对列的名称进行过滤，而不是列的值。
+5. QualifierFilter:列过滤器,QualifierFilter对列的名称进行过滤，而不是列的值。
 
 ```
 scan ‘blog’,{FILTER=>”PrefixFilter(‘t’) AND QualifierFilter(>=,’binary:b’)”}
-
 ```
 
-- TimestampsFilter:时间戳过滤器
+6. TimestampsFilter:时间戳过滤器
 
 ```
 scan ‘qy’,{FILTER=>”TimestampsFilter(1448069941270,1548069941230)” }
-
 ```
 
-count 返回Hbase表中总的记录数
+7. count 返回Hbase表中总的记录数
 
 ```
 INTERVAL: 每隔多少行显示一次count，默认是1000
 CACHE:每次去取的缓存区大小，默认是10，调整该参数可提高查询速度
-
 count 'blog',INTERVAL=>1,CACHE => 1
 ```
 
-truncate 清空表
+8. truncate 清空表
 
 ```
 HBase是先将表disable，再drop the table，最后creating table。
 truncate 'table_name'
-
 ```
 
 
