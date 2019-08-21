@@ -268,49 +268,49 @@ truncate 'table_name'
 
 ![](https://static.studytime.xin/image/articles/spring-boot20190821013459.png)
 
-1. 建表：表名blog，有两个列族：‘article’和‘author’
+1、 建表：表名blog，有两个列族：‘article’和‘author’
 
 ```
 create 'blog','article','author'
 ```
-2. 插⼊数据到表blog中，数据如上图
+2、 插⼊数据到表blog中，数据如上图
 
 ```
 put 'blog','blog1','article:title','mapreduce'
 put 'blog','blog2','article:title','hadoop'
 put 'blog','blog3','article:title','hdfs'
 ```
-3. 读出rowkey为“blog2”的author的name和age
+3、 读出rowkey为“blog2”的author的name和age
 
 ```
 get 'blog','blog2',{COLUMN=>['author:name','author:age']}
 ```
 
-4. 读出所有article的title
+4、 读出所有article的title
 
 ```
 scan 'blog',{COLUMNS=>['article:title']}
 ```
 
-5. 更新“blog1”作者的age为40
+5、 更新“blog1”作者的age为40
 
 ```
  put 'blog','blog1','author:age','40'
 ```
 
-6. 读出rowkey为“blog1”中author的name和age
+6、 读出rowkey为“blog1”中author的name和age
 
 ```
 get 'blog','blog1',{COLUMN=>['author:name','author:age']}
 ```
 
-7. 删除rowkey为“blog3”中article的tag
+7、 删除rowkey为“blog3”中article的tag
 
 ```
 delete 'blog','blog3','article:tag'
 ```
 
-8. 读出所有article的title和tag，同时读出所有author的name
+8、 读出所有article的title和tag，同时读出所有author的name
 
 ```
 scan 'blog',{COLUMNS=>['article:title','article:tag','author:name']}
