@@ -119,13 +119,13 @@ drwxr-x---@  9 baihe  staff   288B  8 24 11:32 webapps
 drwxr-x---@  3 baihe  staff    96B  8 24 11:15 work
 ```
 
->  bin:存放tomcat命令
->  conf:存放tomcat配置信息,里面的server.xml文件是核心的配置文件
->  lib:支持tomcat软件运行的jar包和技术支持包(如servlet和jsp)
->  logs:运行时的日志信息
->  temp:临时目录
->  webapps:共享资源文件和web应用目录
->  work:tomcat的运行目录.jsp运行时产生的临时文件就存放在这里
+-  bin:存放tomcat命令
+-  conf:存放tomcat配置信息,里面的server.xml文件是核心的配置文件
+-  lib:支持tomcat软件运行的jar包和技术支持包(如servlet和jsp)
+-  logs:运行时的日志信息
+-  temp:临时目录
+-  webapps:共享资源文件和web应用目录
+-  work:tomcat的运行目录.jsp运行时产生的临时文件就存放在这里
 
 
 ### 十、默认端口号为8080,修改默认端口，自行确定是否需要
