@@ -2,26 +2,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="baidu-site-verification" content="Q6TGgnCGrt" />
+    <meta name="baidu-site-verification" content="Q6TGgnCGrt"/>
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{site.static-url}}/assets/images/favicon.png">
 
-
-    <title>{% if page.titlebar %} {{ page.titlebar | escape }} - studyTime {% elsif page.title %} {{ page.title | escape }} - studyTime博客 {% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | escape }}{% else %}{{ site.keywords }}{% endif %}">
+    <title>{% if page.titlebar %} {{ page.titlebar | escape }} - studyTime {% elsif page.title %} {{ page.title | escape
+        }} - studyTime博客 {% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="keywords"
+          content="{% if page.keywords %}{{ page.keywords | escape }}{% else %}{{ site.keywords }}{% endif %}">
     <meta name="description"
           content="{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' |  prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "
+    /feed.xml" | prepend: site.url }}">
 
     <!-- Third-Party CSS -->
     <link rel="stylesheet" href="{{site.static-url}}/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{site.static-url}}/octicons/octicons/octicons.css?version={{site.static-url-version}}">
-<!--    <link rel="stylesheet" href="{{site.static-url}}/octicons/octicons/fontawesome-webfont.woff2?version={{site.static-url-version}}">-->
+    <link rel="stylesheet"
+          href="{{site.static-url}}/octicons/octicons/octicons.css?version={{site.static-url-version}}">
+    <!--    <link rel="stylesheet" href="{{site.static-url}}/octicons/octicons/fontawesome-webfont.woff2?version={{site.static-url-version}}">-->
     <link rel="stylesheet" href="{{site.static-url}}/hover/css/hover-min.css">
     <link rel="stylesheet" href="{{site.static-url}}/primer-markdown/dist/user-content.min.css">
-<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">-->
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">-->
     <link rel="stylesheet" href="{{site.static-url}}/assets/css/gitalk.css?version={{site.static-url-version}}">
 
     <link rel="stylesheet" href="{{site.static-url}}/assets/css/syntax.css">
@@ -38,20 +41,36 @@
     <link rel="stylesheet" href="{{site.static-url}}/assets/css/{{css}}">
     {% endfor %}
 
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes"/>
 
 
     <style type="text/css">
-        @media(max-width:960px)
-        {
-            body {width:100%;}
-            .site-header-nav{width:100%}
-            .site-header-nav img{max-width:90%}
-            .site-header-nav{display:none}
-            .sidebar-post-nav{display:none}
-            .rss{display:none}
+        @media (max-width: 960px) {
+            body {
+                width: 100%;
+            }
+
+            .site-header-nav {
+                width: 100%
+            }
+
+            .site-header-nav img {
+                max-width: 90%
+            }
+
+            .site-header-nav {
+                display: none
+            }
+
+            .sidebar-post-nav {
+                display: none
+            }
+
+            .rss {
+                display: none
+            }
         }
     </style>
     <script type="text/javascript" src="{{site.static-url}}/jquery/dist/jquery.min.js"></script>
