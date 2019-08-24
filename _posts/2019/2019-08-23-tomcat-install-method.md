@@ -11,7 +11,7 @@ linux下安装tomact和mac下无区别，汇总下tomcat的安装记录。
 
 ## 目录
 
-### 前置条件
+### 一、前置条件
 java Sdk已安装 
 
 ```
@@ -21,19 +21,22 @@ Java(TM) SE Runtime Environment (build 1.8.0_191-b12)
 Java HotSpot(TM) 64-Bit Server VM (build 25.191-b12, mixed mode)
 ```
 
-### 下载Tomact
+
+### 二、下载Tomact
 
 [Tomcat下载链接](https://tomcat.apache.org/download-80.cgi)
 
 ![](https://static.studytime.xin/image/articles/spring-boot20190824183211.png)
 
-### 解压文件
+
+### 三、解压文件
 
 ```
 tar -zxvf apache-tomcat-8.5.45.tar.gz -C ~/App
 ```
 
-### 配置环境变量
+
+### 四、配置环境变量
 
 ```
 vim  ~/.bash_profile
@@ -46,7 +49,8 @@ export PATH=$PATH:/Users/baihe/App/apache-tomcat-8.5.45/bin
 source ~/.bash_profile
 ```
 
-### 启动 Tomcat
+
+### 五、启动 Tomcat
 ```
 startup.sh // 启动 tomcat
 
@@ -67,7 +71,7 @@ sudo chmod 755 /Users/baihe/App/apache-tomcat-8.5.45/bin
 ```
 
 
-### 访问webUI查看是否配置正常
+### 六、访问webUI查看是否配置正常
 
 ```
 http://localhost:8080/
@@ -75,13 +79,15 @@ http://localhost:8080/
 
 ![](https://static.studytime.xin/image/articles/spring-boot20190824183820.png)
 
-### 关闭Tomcat命令
+
+### 七、关闭Tomcat命令
 
 ```
 shutdown.sh // 关闭 tomcat
 ```
 
-### 查看tomcat版本号
+
+### 八、查看tomcat版本号
 
 ```
 ➜  conf catalina.sh version
@@ -100,7 +106,8 @@ JVM Version:    1.8.0_191-b12
 JVM Vendor:     Oracle Corporation
 ```
 
-### tomcat 的目录结构介绍
+
+### 九、tomcat 的目录结构介绍
 
 ```
 drwxr-x---@ 27 baihe  staff   864B  8 15 06:27 bin
@@ -120,7 +127,8 @@ drwxr-x---@  3 baihe  staff    96B  8 24 11:15 work
 >  webapps:共享资源文件和web应用目录
 >  work:tomcat的运行目录.jsp运行时产生的临时文件就存放在这里
 
-### 默认端口号为8080,修改默认端口，自行确定是否需要
+
+### 十、默认端口号为8080,修改默认端口，自行确定是否需要
 
 服务器的默认端口是8080,也可以将其改成自定义的端口,为了避免与系统端口冲突,必须设置为1024以上,例如设置为80808
 
@@ -145,7 +153,8 @@ startup.sh
 
 ```
 
-### 密码设置，部分管理功能，需要密码才可正常
+
+### 十一、密码设置，部分管理功能，需要密码才可正常
 
 ```
 cd ~/App/apache-tomcat-8.5.45/conf
