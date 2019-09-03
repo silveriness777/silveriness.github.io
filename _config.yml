@@ -24,7 +24,7 @@ sfblog_url: https://segmentfault.com/u/baihe
 base_url: https://www.studytime.xin
 baseurl: ''
 enforce_ssl: https://www.studytime.xin
-static-url-version: 20190903
+static-url-version: 20190905
 
 ## Gem
 plugins:
