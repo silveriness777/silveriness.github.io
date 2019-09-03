@@ -18,7 +18,8 @@
 .icon-logo{fill: #fff;}
 
 .jumbotron {
-    background: #4183c4;
+    /*background: #4183c4;*/
+    background-image:url(https://theme.zdassets.com/theme_assets/774142/c10b457a89983f923b38b01681c922dbb9ba6e2c.svg)
 }
 
 .site-header.site-header-nav-scrolled a {
