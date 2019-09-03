@@ -19,6 +19,7 @@ url: /link.html
 - [laravel](https://laravel-china.org/) - laravelChina
 - [Hbase中文文档](http://abloz.com/hbase/book.html/) - Hbase中文文档
 - [presto文档](https://prestodb.github.io/) - presto文档
+- [flume中文文档](https://flume.liyifeng.org/#) - flume中文文档
 
 ## 推荐网站
 - [Spring Boot中文导航](http://springboot.fun/) - Spring Boot的资源导航网站    

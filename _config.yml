@@ -16,8 +16,8 @@ encoding: "utf-8"
 favicon: favicon.png
 static-url: https://static.studytime.xin/studytime-Blog
 
-repository: MyStudytime/studytime-Blog
-github_url: https://github.com/MyStudytime
+repository: mystudytime/studytime-blog
+github_url: https://github.com/mystudytime
 url: https://www.studytime.xin
 
 sfblog_url: https://segmentfault.com/u/baihe
