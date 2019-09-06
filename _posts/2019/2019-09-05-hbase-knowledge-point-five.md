@@ -5,10 +5,10 @@ category: bigdata
 tags: [bigdata]
 keywords: bigdata,Java,Hbase，Hbase知识点，Hbase基本架构和原理,HBase过滤器
 ---
-### 过滤器（Filter）
-
 HBase 的基本 API，提供了包括增、删、改、查等的操作。相对而言，与传统的关系型数据库相比，查询略显苍白。只能根据特性的行键进行查询（Get）或者根据行键的范围来查询（Scan）。
 为此 HBase 提供了高级的查询方法：过滤器 Filter 。
+
+### 过滤器（Filter）
 
 过滤器可以根据列族、列、版本等更多的条件来对数据进行过滤，基于 HBase 本身提供的三维有序（行键，列，版本有序），这些过滤器可以高效地完成查询过滤的任务，带有过滤器条件的 RPC 查询请求会把过滤器分发到各个 RegionServer（这是一个服务端过滤器），这样也可以降低网络传输的压力。
 
