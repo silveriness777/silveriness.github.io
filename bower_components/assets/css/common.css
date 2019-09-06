@@ -36,8 +36,9 @@
 }
 
 .site-header a:hover {
-    /*color: #4183c4;*/
-    color: #4771c1;
+    color: #4183c4;
+    /*color: #243060;*/
+    /*color: #3f70c7;*/
 }
 
 #site-header-brand, #site-header-brand .octicon {
