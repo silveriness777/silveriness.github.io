@@ -120,6 +120,17 @@ Hbase 中最重要的操作是写操作和读操作。
 - 步骤二：扫描器查找写缓存 MemCache，它内部缓存了最近写入的数据
 - 步骤三：如果在 BlockCache 和 MemCache 中未找到目标数据，HBase 将读取中 Hfie，以获取想要的数据
 
+#### 数据 Flush 流程：
+- 步骤一：当 MemStore 数据达到阈值（默认是128M，老版本是64M），将数据刷到硬盘，将内存中的数据删除，同时删除 HLog 中的历史数据
+- 步骤二：并将数据存储到 Hdfs 中
+- 步骤三：在 HLog 中做标记点
+
+#### 数据合并过程：
+当数据块达到4块，HMaster 触发合并操作，Region 将数据块加载到本地，进行合并<br>
+当合并的数据超过256M，进行拆分，将拆分后的 Region 分配给不同的 HRegionServer 管理<br>
+当HRegionServer宕机后，将HRegionServer上的 HLog 拆分，然后分配给不同的 HRegionServer 加载，修改.META.<br>
+注意：HLog会同步到 Hdfs<br>
+
 
 
 
