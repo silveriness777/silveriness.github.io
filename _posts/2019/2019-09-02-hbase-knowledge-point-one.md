@@ -46,8 +46,9 @@ Hbase 数据模型：逻辑数据模型和物理数据存储。<br>
 类似与数据库中的 database 和 table 逻辑概念，Hbase 分别将之称为 **namespace** 和 **table**,一个 namespace 中包含了一组 table。
 
 Hbase 内置了两个缺省  namespace：
-    - hbase：系统内建表，包括namespace和meta表
-    - default：用户建表时未指定namespace的表都创建在此。
+- hbase：系统内建表，包括namespace和meta表
+- default：用户建表时未指定namespace的表都创建在此。
+
 Hbase 表由一系列行构成，每行数据有一个 **rowkey**，以及若干 **column famil**y 构成，每个 column family 可包含**无限列**。
 
 2、名词概念 <br>
@@ -56,7 +57,7 @@ Hbase 表由一系列行构成，每行数据有一个 **rowkey**，以及若干
 
 **column family：** 列簇由多个列共同组成。每行数据都有相同的 column family。column family 属于 schema 的一部分，定义表时必须指定好。每个 column family 包含无数个动态列。为访问控制的基本单元。同一 column family 中的数据在物理上会存储在一个文件中。<br>
 
-**column qualifier：**  内部列标示，Hbase 每列数据看通过  column family:column qualifier 定位。column qualifier 不属于 schema 的一部分，可以动态指定，且每行数据可以有不同的qualifier。跟 rowkey 类似，column qualifier 也会没有数据类型的，以字节数组（byte[]）形式保存。<br>
+**column qualifier：**  内部列标示，Hbase 每列数据看通过  column family:column qualifier 定位。column qualifier 不属于 schema 的一部分，可以动态指定，且每行数据可以有不同的qualifier。跟 rowkey 类似，column qualifier 也是没有数据类型的，以字节数组（byte[]）形式保存。<br>
 
 **cell：**通过 rowkey、column family、column qualifier 可以唯一定位一个 cell，内部保存了多个版本的数值，默认情况下，每个数据的版本号是写入时间戳。cell内的数据也是没有类型的，以数组形式保存。<br>
 
