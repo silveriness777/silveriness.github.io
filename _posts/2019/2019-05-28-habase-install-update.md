@@ -2,7 +2,7 @@
 layout: post
 title:  Hbase知识点（二）搭建Hbase伪分布式
 category: bigdata 
-tags: [bigdata]
+tags: [bigdata,Java]
 keywords: bigdata,Hbase,hbase,Hbase学习之路
 ---
 
