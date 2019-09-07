@@ -4,7 +4,7 @@ title:  Spark系列文章（二）:Spark伪分布式安装
 category: bigdata 
 tags: [bigdata]
 keywords: bigdata,Spark,Spark学习之路,Spark系列文章,Spark初识,Spark伪分布式安装
-excerpt: 测试下
+excerpt: ""
 ---
 
 ## Spark伪分布式安装
