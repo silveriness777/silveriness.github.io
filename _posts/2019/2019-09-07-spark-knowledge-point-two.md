@@ -69,13 +69,8 @@ tar -zxvf spark-2.1.1-bin-hadoop2.7.tar -C ~/App
 ```
 
 2. 进入 conf 配置文件目录，修改 spark-env.sh
-```
-cd ~/App/spark-2.1.1-bin-hadoop2.7/conf
-cp spark-env.sh.template spark-env.sh
-vim spark-env.sh
 
-export HADOOP_CONF_DIR=~/App/hadoop-2.7.3/etc/hadoop
-```
+
 
 3. 进入 conf 配置文件目录，修改 spark-defaults.conf
 
