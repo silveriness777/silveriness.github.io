@@ -63,15 +63,16 @@ sbin/mr-jobhistory-daemon.sh start historyserver
 
 ### Spark 安装、配置
 
-1. 解压缩 spark-2.1.0-bin-hadoop2.7.tgz
+#### 解压缩 `spark-2.1.0-bin-hadoop2.7.tgz`
+
 ```
 tar -zxvf spark-2.1.1-bin-hadoop2.7.tar -C ~/App
 ```
 
-2. 进入 conf 配置文件目录，修改 `spark-env.sh`
+#### 进入 conf 配置文件目录，修改 `spark-env.sh`
 
 
-3. 进入 conf 配置文件目录，修改 `spark-defaults.conf`
+#### 进入 conf 配置文件目录，修改 `spark-defaults.conf`
 
 ```
 cp spark-defaults.conf.template spark-defaults.conf
@@ -85,7 +86,7 @@ spark.eventLog.dir=hdfs:///tmp/spark/events
 spark.history.fs.logDirectory=hdfs:///tmp/spark/events
 ```
 
-4. 在 HDFS 上创建目录 `/tmp/spark/events`
+#### 在 HDFS 上创建目录 `/tmp/spark/events`
 ```
 hadoop fs –mkdir –p /tmp/spark/events
 ```
