@@ -71,6 +71,16 @@ tar -zxvf spark-2.1.1-bin-hadoop2.7.tar -C ~/App
 
 #### 进入 conf 配置文件目录，修改 `spark-env.sh`
 
+```
+cd ~/App/spark-2.1.1-bin-hadoop2.7/conf
+cp spark-env.sh.template spark-env.sh
+vim spark-env.sh
+
+export HADOOP_CONF_DIR=~/App/hadoop-2.7.3/etc/hadoop
+export HIVE_CONF_DIR=~/App/apache-hive-2.1.1-bin/conf
+export SPARK_DIST_CLASSPATH=$(~/App/hadoop-2.7.3/bin/hadoop classpath)
+```
+
 
 #### 进入 conf 配置文件目录，修改 `spark-defaults.conf`
 
