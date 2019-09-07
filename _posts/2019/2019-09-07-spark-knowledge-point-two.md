@@ -7,8 +7,8 @@ keywords: bigdata,Spark,Spark学习之路,Spark系列文章,Spark初识,Spark伪
 ---
 
 ## Spark伪分布式安装
-### 下载 Spark 安装包
 
+### 下载 Spark 安装包
 [官网下载 http://spark.apache.org/downloads.html](http://spark.apache.org/downloads.html)
 
 ![](https://static.studytime.xin/image/articles/spring-boot20190907184655.png?x-oss-process=image/resize,w_800)
@@ -19,8 +19,8 @@ keywords: bigdata,Spark,Spark学习之路,Spark系列文章,Spark初识,Spark伪
 2. hadoop2.7.5 已安装
 
 ### 修改 Hadoop 配置文件
-
 修改 Hadoop yarn-site.xml配置
+
 ```
 vim ~/App/hadoop-2.7.3/etc/hadoop/yarn-site.xml
 
@@ -49,29 +49,32 @@ start-yarn.sh
 ```
 
 启动 MapReduce History Server
-`sbin/mr-jobhistory-daemon.sh start historyserver`
 
-在浏览器中打开 mapreduce history server 地址
+```
+sbin/mr-jobhistory-daemon.sh start historyserver
+```
+
+在浏览器中打开 MapReduce history server 地址 <br>
+
 [http://bigdata:19888](http://bigdata:19888)
 
 
 ### Spark 安装、配置
 
 1. 解压缩 spark-2.1.0-bin-hadoop2.7.tgz
-`tar -zxvf spark-2.1.1-bin-hadoop2.7.tar -C ~/App`
-2. 进入 conf 配置文件目录，修改 spark-env.sh
-
 ```
-# 进入配置文件
+tar -zxvf spark-2.1.1-bin-hadoop2.7.tar -C ~/App
+```
+
+2. 进入 conf 配置文件目录，修改 spark-env.sh
+```
 cd ~/App/spark-2.1.1-bin-hadoop2.7/conf
 cp spark-env.sh.template spark-env.sh
 vim spark-env.sh
 
-# 配置内容
 export HADOOP_CONF_DIR=~/App/hadoop-2.7.3/etc/hadoop
 export HIVE_CONF_DIR=~/App/apache-hive-2.1.1-bin/conf
 export SPARK_DIST_CLASSPATH=$(~/App/hadoop-2.7.3/bin/hadoop classpath)
-
 ```
 
 3. 进入 conf 配置文件目录，修改 spark-defaults.conf
@@ -87,20 +90,17 @@ spark.history.ui.port=18080
 spark.eventLog.enabled=true
 spark.eventLog.dir=hdfs:///tmp/spark/events
 spark.history.fs.logDirectory=hdfs:///tmp/spark/events
-
 ```
-4. 在 hdfs 上创建目录 /tmp/spark/events
 
+4. 在 hdfs 上创建目录 /tmp/spark/events
 ```
 hadoop fs –mkdir –p /tmp/spark/events
 ```
 
 ### 配置环境变量
-
 ```
 vim ~/.bash_profile
 
-# spark
 export SPARK_HOME=/Users/baihe/App/spark-2.1.1-bin-hadoop2.7
 export PATH=$SPARK_HOME/bin:$PATH
 
@@ -137,7 +137,7 @@ source ~/.bash_profile
 ![](https://static.studytime.xin/image/articles/spring-boot20190907194335.png?x-oss-process=image/resize,w_1100)
 
 
-[spark history server 链接](http://bigdata:18080/)
+[spark history server ](http://bigdata:18080/)
 
 ![](https://static.studytime.xin/image/articles/spring-boot20190907194244.png?x-oss-process=image/resize,w_1100)
 
