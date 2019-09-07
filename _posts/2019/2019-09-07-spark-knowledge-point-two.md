@@ -56,12 +56,15 @@ sbin/mr-jobhistory-daemon.sh start historyserver
 
 在浏览器中打开 MapReduce history server 地址 <br>
 
+```
 [http://bigdata:19888](http://bigdata:19888)
+```
 
 
 ### Spark 安装、配置
 
 1. 解压缩 spark-2.1.0-bin-hadoop2.7.tgz
+
 ```
 tar -zxvf spark-2.1.1-bin-hadoop2.7.tar -C ~/App
 ```
@@ -78,12 +81,11 @@ export SPARK_DIST_CLASSPATH=$(~/App/hadoop-2.7.3/bin/hadoop classpath)
 ```
 
 3. 进入 conf 配置文件目录，修改 spark-defaults.conf
+
 ```
-# 进入配置文件
 cp spark-defaults.conf.template spark-defaults.conf
 vim spark-defaults.conf
 
-# 配置内容
 spark.master=local
 spark.yarn.historyServer.address=bigdata:18080
 spark.history.ui.port=18080
