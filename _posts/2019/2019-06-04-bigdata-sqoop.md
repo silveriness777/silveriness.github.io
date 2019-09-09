@@ -3,6 +3,7 @@ layout: post
 title:  Sqoop学习之路
 category: bigdata 
 tags: [bigdata]
+tags: 大数据 Sqoop
 keywords: bigdata,Sqoop,Sqoop学习之路
 ---
 

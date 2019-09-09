@@ -2,7 +2,7 @@
 layout: post
 title:  Git工作流指南：Gitflow工作流
 category: git 
-tags: [git]
+tags: git gitFlow
 ---
 
 Gitflow工作流定义了一个围绕项目发布的严格分支模型。虽然比功能分支工作流复杂几分，但提供了用于一个健壮的用于管理大型项目的框架。

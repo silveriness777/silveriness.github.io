@@ -2,7 +2,7 @@
 layout: post
 title:  Hbase知识点（三）HBase shell常用操作
 category: bigdata 
-tags: [bigdata]
+tags: HBase Java Hadoop 大数据 shell
 keywords: bigdata,Hbase,hbase,Hbase shell,Hbase中文文档，学习之路
 ---
 

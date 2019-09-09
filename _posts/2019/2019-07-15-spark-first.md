@@ -2,7 +2,7 @@
 layout: post
 title:  Spark系列文章（一）:Spark初识
 category: bigdata 
-tags: [bigdata]
+tags: 大数据 Spark
 keywords: bigdata,Spark,Spark学习之路,Spark系列文章,Spark初识
 ---
 

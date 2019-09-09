@@ -2,7 +2,7 @@
 layout: post
 title:  Spark系列文章（二）:Spark运行环境构建
 category: bigdata 
-tags: [bigdata]
+tags: 大数据 Spark mac IDEA
 keywords: bigdata,Spark,Spark学习之路,Spark系列文章,Spark运行环境,Spark运行环境IDEA
 ---
 

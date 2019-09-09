@@ -2,7 +2,7 @@
 layout: post
 title:  搭建个人博客（三）:个人博客nginx配置优化
 category: Blog 
-tags: [Blog]
+tags: blog nginx 建站 
 ---
 
 近日发现博客域名studytime.xin和www.studytime.xin都是可以允许访问到的。导致使用卜算子统计访问信息时，数据也是分散的。针对于此，将域名所有请求统一转发到https://www.studytime.xin

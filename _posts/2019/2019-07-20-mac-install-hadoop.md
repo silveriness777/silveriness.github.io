@@ -2,7 +2,7 @@
 layout: post
 title:  MAC下搭建Hadoop运行环境
 category: bigdata 
-tags: [bigdata]
+tags: 大数据 Haoop mac 
 keywords: bigdata,Haoop,mac Hadoop,Hadoop安装,hadoop
 ---
 
