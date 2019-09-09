@@ -6,6 +6,9 @@ tags: [bigdata]
 keywords: bigdata,Spark,Spark学习之路,Spark系列文章,Spark初识,Spark共享变量
 excerpt: "Spark 提供了两种受限的共享变量：广播变量和共享变量，从而实现更加高效的运算"
 ---
+
+## 共享变量
+
 ### 广播变量 broadcast variable
 
 #### 广播变量是什么？
@@ -66,21 +69,18 @@ val pbservedSizes = sc.parallelize(1 to 10 ,slices).map(_=>barr.value.size)
 
 #### Spark 如何创建累加器和使用
 
-##### 定义一个累加器
+1、 定义一个累加器
 ```
 val a = sc.accumulator(0)
 ```
 
-##### 还原一个累加器
+2、 还原一个累加器
 ```
 val b = a.value
-
 ```
 
-##### 代码使用实例
-
+3、 代码使用实例
 ```
-
 定义一个初始值为0，名为total的累加器
 val totalPoints = sc.accumulator(0,"total")
 定义一个初始值为0，名为hit的累加器
