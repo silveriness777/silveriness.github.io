@@ -47,13 +47,13 @@ RDD是一个应用层面的逻辑概念。一个RDD多个分片。RDD就是一�
 
 Spark 程序设计流程一般如下：
 
-步骤一：实例化 sparkContent 对象。sparkContent 封装了程序运行的上下文环境，包括配置信息、数据库管理器、任务调度等。
-步骤二：构造 RDD。可通过 sparkContent 提供的函数构造 RDD，常见的 RDD 构造方式分为：将 Scala集合转换为 RDD 和将 Hadoop 文件转换为 RDD。
-步骤三：在 RDD 基础上，通过 Spark 提供的 transformation 算子完成数据处理步骤。
-步骤四：通过 action 算子将最终 RDD 作为结果直接返回或者保存到文件中。
+步骤一：实例化 sparkContent 对象。sparkContent 封装了程序运行的上下文环境，包括配置信息、数据库管理器、任务调度等。<br>
+步骤二：构造 RDD。可通过 sparkContent 提供的函数构造 RDD，常见的 RDD 构造方式分为：将 Scala集合转换为 RDD 和将 Hadoop 文件转换为 RDD。<br>
+步骤三：在 RDD 基础上，通过 Spark 提供的 transformation 算子完成数据处理步骤。<br>
+步骤四：通过 action 算子将最终 RDD 作为结果直接返回或者保存到文件中。<br>
 
-Spark 提供了两大类编程接口，分别为 RDD 操作符以及共享变量。
-其中 RDD 操作符包括 transformation 和 action 以及 control API 三类；共享变量包括广播变量和累加器两种。
+Spark 提供了两大类编程接口，分别为 RDD 操作符以及共享变量。<br>
+其中 RDD 操作符包括 transformation 和 action 以及 control API 三类；共享变量包括广播变量和累加器两种。<br>
 
 
 ### 三、创建 sparkContent 对象，封装了 Spark 执行环境信息
@@ -203,10 +203,9 @@ Spark 提供的多种持久化级别，主要是为了在 CPU 和内存消耗之
 ```
 sc.checkpoint("hdfs://spark/rdd"); // 设置存放目录
 val data = sc.testFile("hdfs://bigdata:9000/input");
-val rdd = data.map(..).reduceByKey(...)
-
-rdd.checkpoint
-rdd.count()
+val rdd = data.map(..).reduceByKey(...);
+rdd.checkpoint      // 设置checkpoint
+rdd.count()         // action运算
 ```
 
 
