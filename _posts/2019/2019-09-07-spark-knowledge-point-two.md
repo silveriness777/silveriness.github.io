@@ -2,7 +2,7 @@
 layout: post
 title:  Spark系列文章（二）:Spark伪分布式安装
 category: bigdata 
-tags: [bigdata]
+tags: scala Hadoop Java 大数据 Spark yarn
 keywords: bigdata,Spark,Spark学习之路,Spark系列文章,Spark初识,Spark伪分布式安装
 excerpt: ""
 ---

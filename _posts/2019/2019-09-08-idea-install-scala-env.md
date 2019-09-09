@@ -2,13 +2,13 @@
 layout: post
 title:  Spark系列文章（三）:搭建Spark开发环境IDEA
 category: bigdata 
-tags: [bigdata]
+tags: scala 大数据 Spark IDEA maven
 keywords: bigdata,Spark,Scala,Idea
 ---
 
 构建Spark运行环境，在IDEA上利用maven进行构建
 
-## IDEA搭建Spark运营环境
+## IDEA搭建Spark运行环境
 
 ### 一、创建maven工程 
 

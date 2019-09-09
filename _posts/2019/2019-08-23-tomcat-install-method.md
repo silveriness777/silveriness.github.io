@@ -2,7 +2,7 @@
 layout: post
 title:  Tomcat安装和配置
 category: Java 
-tags: [Java]
+tags: Java Hadoop Tomcat  架构
 keywords: bigdata,Java,Tomcat，tomcat
 ---
 

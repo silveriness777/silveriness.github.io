@@ -2,7 +2,7 @@
 layout: post
 title:  Hbase知识点（四）Hbase基本架构和原理
 category: bigdata
-tags: [bigdata]
+tags: HBase Hadoop Java 大数据 架构
 keywords: bigdata,Java,Hbase，Hbase知识点，Hbase基本架构和原理
 ---
 

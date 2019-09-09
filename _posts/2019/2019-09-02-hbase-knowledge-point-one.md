@@ -2,7 +2,7 @@
 layout: post
 title:  Hbase知识点（一）初识与扩展
 category: bigdata
-tags: [bigdata]
+tags: HBase Hadoop Java 大数据 架构
 keywords: bigdata,Java,Hbase，Hbase知识点，初始
 ---
 

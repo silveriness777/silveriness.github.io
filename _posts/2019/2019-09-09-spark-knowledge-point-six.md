@@ -2,7 +2,7 @@
 layout: post
 title:  Spark系列文章（六）:Spark的共享变量
 category: bigdata 
-tags: [bigdata]
+tags: 大数据 Spark
 keywords: bigdata,Spark,Spark学习之路,Spark系列文章,Spark初识,Spark共享变量
 excerpt: "Spark 提供了两种受限的共享变量：广播变量和共享变量，从而实现更加高效的运算。"
 ---

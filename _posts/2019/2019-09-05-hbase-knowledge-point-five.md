@@ -2,7 +2,7 @@
 layout: post
 title:  Hbase知识点（五）HBase过滤器（Filter）
 category: bigdata
-tags: [bigdata]
+tags: HBase Hadoop Java 大数据
 keywords: bigdata,Java,Hbase，Hbase知识点，Hbase基本架构和原理,HBase过滤器
 ---
 HBase 的基本 API，提供了包括增、删、改、查等的操作。相对而言，与传统的关系型数据库相比，查询略显苍白。只能根据特性的行键进行查询（Get）或者根据行键的范围来查询（Scan）。
