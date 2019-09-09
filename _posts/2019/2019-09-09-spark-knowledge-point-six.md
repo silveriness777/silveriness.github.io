@@ -21,16 +21,16 @@ excerpt: "Spark 提供了两种受限的共享变量：广播变量和共享变�
 
 #### Spark 如何创建广播变量和使用
 
-1. 如何定义一个广播变量
+1、 如何定义一个广播变量
 ```
 val a = 3
 val broadcast = sc.broadcast(a)
 ```
-2. 还原一个广播变量
+2、 还原一个广播变量
 ```
 val c = broadcast.value
 ```
-3. 代码使用实例
+3、 代码使用实例
 ```
 val arr = (0 until 1000).toArray
 
@@ -39,9 +39,8 @@ val barr = sc.broadccast(arr)
 
 # 广播变量的使用
 val pbservedSizes = sc.parallelize(1 to 10 ,slices).map(_=>barr.value.size)
-
 ```
-4. 使用广播变量注意事项
+4、 使用广播变量注意事项
 - 变量一旦被定义为一个广播变量，那么这个变量只能读，不能修改
 - 能不能将一个 RDD 使用广播变量广播出去？答复是：不能，因为 RDD 是不存储数据的。可以将 RDD 的结果广播出去。
 - 广播变量只能在 Driver 端定义，不能在 Executor 端定义。
