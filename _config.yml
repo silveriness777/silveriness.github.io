@@ -68,7 +68,7 @@ navs:
     label: Home
 
   - href: /bigdata.html
-    label: bigdata
+    label: Bigdata
   -
     href: /PHP.html
     label: PHP
