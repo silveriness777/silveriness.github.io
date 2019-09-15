@@ -26,9 +26,9 @@ Flume 为我们提供了 Monitor 的机制：[http://flume.apache.org/FlumeUserG
 ### Ganglia Reporting
 Flume 可以报告它的 metrics 到 ganglia3，只要你在启动 Flume agent 的时候设置一些参数即可，也可以把这些参数设置在 flume-env.sh 配置文件中。需要设置的参数如下，这些参数的前缀如下Flume.monitoring：
 
--Dflume.monitoring.type：类型必须是ganglia
--Dflume.monitoring.pollFrequency： 默认值是60秒，flume向ganglia报告metrics的时间间隔
--Dflume.monitoring.isGanglia3： 默认是false，ganglia server的版本在3以上，flume 发送的是ganglia3.1的数据格式
+- -Dflume.monitoring.type：类型必须是ganglia
+- -Dflume.monitoring.pollFrequency： 默认值是60秒，flume向ganglia报告metrics的时间间隔
+- -Dflume.monitoring.isGanglia3： 默认是false，ganglia server的版本在3以上，flume 发送的是ganglia3.1的数据格式
 
 启动flume Agent:
 ```
