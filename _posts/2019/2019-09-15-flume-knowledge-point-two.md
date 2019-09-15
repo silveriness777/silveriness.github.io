@@ -76,7 +76,7 @@ a1.sources.r1.interceptors.i1.value = static_value
 
 ```
 
-- UUID Interceptor：该 Interceptor 在每个 Event 头部插入一个128位的全局唯一标示，例如 b5755073-77a9-43c1-8fad-b7a586fc1b97
+- UUID Interceptor：该 Interceptor 在每个 Event 头部插入一个128位的全局唯一标示，例如 b5755073-77a9-43c1-8fad-b7a586fc1b97。
 
 ```
 #type的参数不能写成uuid，得写具体，否则找不到类
@@ -86,7 +86,7 @@ a1.sources.r1.interceptors.i1.preserveExisting = true
 a1.sources.r1.interceptors.i1.prefix = UUID_
 ```
 
-- Regex Filtering Interceptor：该 Interceptor 可根据正则表达式过滤或者保留符合要求的 Event
+- Regex Filtering Interceptor：该 Interceptor 可根据正则表达式过滤或者保留符合要求的 Event。
 ```
 
 a1.sources.r1.interceptors = i1
