@@ -30,7 +30,8 @@ a1.sources.r1.interceptors.i2.type=timestamp
 
 - Timestamp Interceptor：该 Interceptor 在每个 Event 头部插入时间戳，其中key是timestamp,value为当前时刻。
 
-- Host Interceptor：该 Interceptor 在每个 Event 头部插入当前 Agent 所在机器的host或ip，其中key是host(也可自定义)
+- Host Interceptor：该 Interceptor 在每个 Event 头部插入当前 Agent 所在机器的host或ip，其中key是host(也可自定义)。
+
 ```
 vi host_agent.properties
 
@@ -43,15 +44,17 @@ a1.sources.r1.channels = c1
 a1.sources.r1.command = tail -F /tmp/baihe/hehe.txt
 a1.sources.r1.interceptors = i1
 a1.sources.r1.interceptors.i1.type = host
-#参数为true时用IP192.168.8.71，参数为false时用主机名bigdata，默认为true
+
+参数为true时用IP192.168.8.71，参数为false时用主机名bigdata，默认为true
 a1.sources.r1.interceptors.i1.useIP = false
 a1.sources.r1.interceptors.i1.hostHeader = agentHost
  
 a1.sinks.k1.type=hdfs
 a1.sinks.k1.channel = c1
 a1.sinks.k1.hdfs.path = hdfs://bigdata:9000/user/baihe/flume/%y%m%d
+
 a1.sinks.k1.hdfs.filePrefix = baihe_%{agentHost}
-#往生成的文件加后缀名.log
+往生成的文件加后缀名.log
 a1.sinks.k1.hdfs.fileSuffix = .log
 a1.sinks.k1.hdfs.fileType = DataStream
 a1.sinks.k1.hdfs.writeFormat = Text
