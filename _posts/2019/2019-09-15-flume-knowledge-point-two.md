@@ -65,38 +65,41 @@ a1.channels.c1.capacity = 1000
 a1.channels.c1.transactionCapacity = 100
 ```
 
+启动命令：
+
 bin/flume-ng agent -c conf/ -f conf/host_agent.properties -n a1 -Dflume.root.logger=INFO,console
 
 - Static Interceptor：静态拦截器，用于在events header中加入一组静态的key和value。
+
 ```
 a1.sources.r1.interceptors = i1
 a1.sources.r1.interceptors.i1.type = static
 a1.sources.r1.interceptors.i1.key = static_key
 a1.sources.r1.interceptors.i1.value = static_value
-
 ```
 
 - UUID Interceptor：该 Interceptor 在每个 Event 头部插入一个128位的全局唯一标示，例如 b5755073-77a9-43c1-8fad-b7a586fc1b97。
 
 ```
-#type的参数不能写成uuid，得写具体，否则找不到类
+// type的参数不能写成uuid，得写具体，否则找不到类
 a1.sources.r1.interceptors.i1.type = org.apache.flume.sink.solr.morphline.UUIDInterceptor$Builder
-#如果UUID头已经存在,它应该保存
+// 如果UUID头已经存在,它应该保存
 a1.sources.r1.interceptors.i1.preserveExisting = true
 a1.sources.r1.interceptors.i1.prefix = UUID_
 ```
 
 - Regex Filtering Interceptor：该 Interceptor 可根据正则表达式过滤或者保留符合要求的 Event。
-```
 
+```
 a1.sources.r1.interceptors = i1
 a1.sources.r1.interceptors.i1.type = regex_filter
 a1.sources.r1.interceptors.i1.regex = ^bai1234.*
-#该配置表示过滤掉不是以bai1234开头的events。如果excludeEvents设为true，则表示过滤掉以bai1234开头的events。
+// 该配置表示过滤掉不是以bai1234开头的events。如果excludeEvents设为true，则表示过滤掉以bai1234开头的events。
 a1.sources.r1.interceptors.i1.excludeEvents = false
 ```
 
 - Regex Extractor Interceptor：该 Interceptor 可根据正则表达式取出对应的值，并插入到头部
+
 ```
 a1.sources.r1.interceptors = i1
 a1.sources.r1.interceptors.i1.type = regex_extractor
@@ -106,7 +109,7 @@ a1.sources.r1.interceptors.i1.serializers.s1.name = cookieid
 a1.sources.r1.interceptors.i1.serializers.s2.name = ip
 ```
 
-该配置从原始events中抽取出cookieid和ip，加入到events header中。
+该配置从原始events中抽取出 cookieid 和 ip，加入到 events header 中。
 
 ### Channel Selector
 
@@ -121,7 +124,7 @@ a1.sources = r1
 a1.channels = c1 c2 c3
 a1.sources.r1.selector.type = replicating
 a1.sources.r1.channels = c1 c2 c3
-# selector.optional是否可选，写入失败，则会被忽略。未设置的失败后，则导致事件失败
+// selector.optional是否可选，写入失败，则会被忽略。未设置的失败后，则导致事件失败
 a1.sources.r1.selector.optional = c3
 ```
 - Multiplexing Channel Selector：根据 Event 头部的属性值，将 Event写入对应的 Channel
@@ -130,13 +133,13 @@ a1.sources.r1.selector.optional = c3
 a1.sources = r1
 a1.channels = c1 c2 c3 c4
 a1.sources.r1.selector.type = multiplexing
-# 指定匹配的header值
+// 指定匹配的header值
 a1.sources.r1.selector.header = state
 # state 值为CZ 写入 c1 Channel
 a1.sources.r1.selector.mapping.CZ = c1
-# state US 写入  c2 c3 Channel
+// state US 写入  c2 c3 Channel
 a1.sources.r1.selector.mapping.US = c2 c3
-# 默认写入 c4
+// 默认写入 c4
 a1.sources.r1.selector.default = c4
 ```
 
@@ -159,10 +162,10 @@ Flume 提供了多种 Sink Processor 实现：
 a1.sinkgroups = g1
 a1.sinkgroups.g1.sinks = k1 k2
 a1.sinkgroups.g1.processor.type = failover
-# 代表优先级，值越大优先级越高
+// 代表优先级，值越大优先级越高
 a1.sinkgroups.g1.processor.priority.k1 = 5
 a1.sinkgroups.g1.processor.priority.k2 = 10
-# 最大等待时长 （以毫秒为单位）
+// 最大等待时长 （以毫秒为单位）
 a1.sinkgroups.g1.processor.maxpenalty = 10000
 ```
 
@@ -173,10 +176,10 @@ demo:
 ```
 a1.sinkgroups  =  g1 
 a1.sinkgroups.g1.sinks  =  k1 k2 
-# 组件类型名称需要是load_balance
+// 组件类型名称需要是load_balance
 a1.sinkgroups.g1.processor.type  =  load_balance 
-# 失败的接收器是否退回
+// 失败的接收器是否退回
 a1.sinkgroups.g1.processor.backoff  =  true
-# 选择机制,必须是round_robin，random
+// 选择机制,必须是round_robin，random
 a1.sinkgroups.g1.processor.selector  =  random
 ```
