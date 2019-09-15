@@ -42,5 +42,7 @@ type    该组件的名称，这里设置为http
 port    该服务监听的端口，默认是41414
 
 启动flume Agent:
+```
 flume-ng agent --conf-file example.conf --name a1 -Dflume.monitoring.type=http -Dflume.monitoring.port=34545
+```
 然后通过http://<hostname>:<port>/metrics来查看值
