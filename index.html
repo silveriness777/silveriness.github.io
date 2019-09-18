@@ -38,8 +38,8 @@ css: ['index.css?version=20190905', 'sidebar-popular-repo.css']
                             <a class="com-topic-title topic-tag-title" style="margin-right: 8px;">{{tag}}</a>
                             {% endfor %}
                         </div>
-                        <div style="margin-right: 85%; margin-bottom: 10px">
-                            2019-03-12
+                        <div class="date">
+                            {{ post.date | date: "%Y/%m/%d" }}
                         </div>
                     </div>
 
