@@ -33,9 +33,9 @@ excerpt: "随着网络发展，网络信息安全的重要性，也变得越来�
 - DOM型：注入的恶意代码并未显式的包含在web服务器的响应页面中，但会被页面中的js脚本以变量的形式来访问到的方式来进行实施攻击。
 
 案例：
-- 存储型：论坛帖子界面input输入框中，输入 <script>alert("xss")</script> 进行提交。
+- 存储型：论坛帖子界面input输入框中，输入 `<script>alert("xss")</script>` 进行提交。
 
-- 反射型：在浏览器输入框中，输入 /xxx.php?name=<script>alert(/xss/)</script>
+- 反射型：在浏览器输入框中，输入 `/xxx.php?name=<script>alert(/xss/)</script>`
 - DOM型：
 ```
 <script>
@@ -45,7 +45,7 @@ document.write(decodeURI(temp_new));
 </script>
 ```
 
-自测的方法：看见输入框就输入：<script>alert("xss")</script> 进行提交
+自测的方法：看见输入框就输入：`<script>alert("xss")</script>` 进行提交
 
 预防措施：
 - 对 style、script、image、src、a 等不安全的因素进行过滤或转义
