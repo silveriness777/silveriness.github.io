@@ -6,6 +6,9 @@ tags: linux
 keywords: linux top
 excerpt: "top命令是Linux下常用的性能分析工具，能够实时显示系统中各个进程的资源占用状况，类似于Windows的任务管理器。"
 ---
+
+## top命令
+
 ### 简述
 
 top 命令是 Linux 下常用的性能分析工具，能够动态实时显示系统中各个进程的资源占用状况。
