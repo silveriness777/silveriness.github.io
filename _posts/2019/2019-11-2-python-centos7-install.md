@@ -41,14 +41,14 @@ cd /data/app/python3.7.0
 
 ### 更改默认的python版本
 
-- 检查当前默认的python2，默认自带的python位置在`/usr/bin/`目录下
+#### 检查当前默认的python2，默认自带的python位置在`/usr/bin/`目录下
 ```
 [root@application_server_2 Python-3.7.0]# ll /usr/bin/python*
 lrwxrwxrwx 1 root root    7 7月   2 15:03 /usr/bin/python -> python2
 lrwxrwxrwx 1 root root    9 7月   2 15:03 /usr/bin/python2 -> python2.7
 -rwxr-xr-x 1 root root 7216 6月  21 04:28 /usr/bin/python2.7
 ```
-- 检查新安装的python3，默认编译安装的python位置在`/usr/local/bin/`目录下
+#### 检查新安装的python3，默认编译安装的python位置在`/usr/local/bin/`目录下
 ```
 [root@application_server_2 Python-3.7.0]# ll /usr/local/bin/python*
 lrwxrwxrwx 1 root root        9 11月  6 00:13 /usr/local/bin/python3 -> python3.7
@@ -58,7 +58,7 @@ lrwxrwxrwx 1 root root       17 11月  6 00:13 /usr/local/bin/python3.7-config -
 -rwxr-xr-x 1 root root     3097 11月  6 00:13 /usr/local/bin/python3.7m-config
 lrwxrwxrwx 1 root root       16 11月  6 00:13 /usr/local/bin/python3-config -> python3.7-config
 ```
-- 修改默认的python，删除旧的python的软连接，创建新的python2和python3的软连接
+#### 修改默认的python，删除旧的python的软连接，创建新的python2和python3的软连接
 ```
 cd /usr/bin/
 rm -f python2
@@ -108,13 +108,9 @@ touch pip.conf
 ```
 
 - 配置内容生成
-```
-vim /root/.pip/pip.conf
+![](https://static.studytime.xin/image/articles/20191106010439.png)
 
-[global]
-index-url=http://mirrors.aliyun.com/pypi/simple/
-trusted-host=mirrors.aliyun.com
-```
 配置文件说明：
+- `[global]`，标示全局生效
 - `index-url=http://mirrors.aliyun.com/pypi/simple/`，指定阿里云源
 - `trusted-host=mirrors.aliyun.com`，信任阿里云站点

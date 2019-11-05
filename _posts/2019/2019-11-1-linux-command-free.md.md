@@ -39,21 +39,21 @@ free 主要参数参数说明：
 - Swap	交换分区，虚拟内存
 
 ### 使用实例
-1. free -b：以bytes为单位来显示内存的信息
+#### free -b：以bytes为单位来显示内存的信息
 ```
 [root@application_server_2 data]# free -b
               total        used        free      shared  buff/cache   available
 Mem:     1927528448   107917312   294449152      450560  1525161984  1619210240
 Swap:             0           0           0
 ```
-2. free -k：以kb为单位来显示内存的信息
+#### free -k：以kb为单位来显示内存的信息
 ```
 [root@application_server_2 data]# free -k
               total        used        free      shared  buff/cache   available
 Mem:        1882352      105708      287100         440     1489544     1580892
 Swap:             0           0           0
 ```
-3.  free -m：以m为单位来显示内存的信息
+#### free -m：以m为单位来显示内存的信息
 ```
 [root@application_server_2 data]# free -m
               total        used        free      shared  buff/cache   available
@@ -61,7 +61,7 @@ Mem:           1838         103         280           0        1454        1544
 Swap:             0           0           0
 ```
 
-4. free -g：以G为单位来显示内存的信息
+#### free -g：以G为单位来显示内存的信息
 ```
 [root@application_server_2 data]# free -g
               total        used        free      shared  buff/cache   available
@@ -69,20 +69,20 @@ Mem:              1           0           0           0           1           1
 Swap:             0           0           0
 ```
 
-5. free -h：以适于人类可读方式显示内存信息。-h与其他命令最大不同是-h选项会在数字后面加上适于人类可读的单位
+#### free -h：以适于人类可读方式显示内存信息。-h与其他命令最大不同是-h选项会在数字后面加上适于人类可读的单位
 ```
 [root@application_server_2 data]# free -h
               total        used        free      shared  buff/cache   available
 Mem:           1.8G        103M        280M        440K        1.4G        1.5G
 Swap:            0B          0B          0B
 ```
-6. free -l：显示高低内存的利用率
-7. free -t：显示linux的全部内存
-8. free -s N：表示每隔N秒打印一次内存信息
-9. free -c N：表示重复打印内存信息N次
-10. free -V：显示版本信息
-11. free -hs 3：以人类可读的方式，每隔3s打印一次内存信息
-12. free -s 2 -c 4：每隔2秒打印一次内存信息，共打印4次
+#### free -l：显示高低内存的利用率
+#### free -t：显示linux的全部内存
+#### free -s N：表示每隔N秒打印一次内存信息
+#### free -c N：表示重复打印内存信息N次
+#### free -V：显示版本信息
+#### free -hs 3：以人类可读的方式，每隔3s打印一次内存信息
+#### free -s 2 -c 4：每隔2秒打印一次内存信息，共打印4次
 
 ### 重点说明
 ```
