@@ -17,8 +17,8 @@ PHPUnit是一个轻量级的PHP测试框架。它是在PHP5下面对JUnit3系列
 - 如果你想要编写代码边调试，又不想操作 Postman 或前端的功能来调用 API
 
 ### 关联文档
->PHPUnit 手册：http://www.phpunit.cn/manual/current/zh_cn/index.html
->PHPUnit assert断言分类整理 ：https://www.cnblogs.com/ningskyer/articles/5744760.html
+- PHPUnit 手册：http://www.phpunit.cn/manual/current/zh_cn/index.html
+- PHPUnit assert断言分类整理 ：https://www.cnblogs.com/ningskyer/articles/5744760.html
 
 ### 安装配置
 
