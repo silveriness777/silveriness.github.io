@@ -7,6 +7,8 @@ keywords: linux whiereis
 excerpt: "whereis 命令用于查找特定的文件，whereis 查找的速度非常快。"
 ---
 
+## 
+
 ### 简述
 whereis 命令用于查找特定的文件，whereis 查找的速度非常快。
 
