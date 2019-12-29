@@ -193,9 +193,9 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 * [GitX](https://rowanj.github.io/gitx/) - [Pieter's](https://github.com/pieter/gitx)的衍生版本，维护增强生产力和团队开发变化。 
 * [Gitbar](https://github.com/Shikkic/gitbar) - 开源，在你的菜单栏上显示 GitHub 贡献统计。(https://github.com/Shikkic/gitbar)
 * [GitHub Desktop](https://desktop.github.com/) - 使用 GitHub 的 GUI 应用。
-* [OhMyStar](https://ohmystarapp.com/) 最好的组织 Github Star 的软件。(https://itunes.apple.com/cn/app/ohmystar2/id1218642292)
-* [GitUp](http://gitup.co/) - 一个简单功能强大的 Git 客户端。(https://github.com/git-up/GitUp) 
-* [Hub](https://hub.github.com/) - 将 GitHub 接口和 Git 命令进行包装。(https://github.com/github/hub) 
+* [OhMyStar](https://ohmystarapp.com/) 最好的组织 Github Star 的软件。
+* [GitUp](http://gitup.co/) - 一个简单功能强大的 Git 客户端。
+* [Hub](https://hub.github.com/) - 将 GitHub 接口和 Git 命令进行包装。
 * [SourceTree](https://www.sourcetreeapp.com/) - 强大的 Git 跨平台客户端。
 * [Tower2](https://www.git-tower.com/) - 最强大的 Git 客户端。
 * [Versions](http://www.versionsapp.com/) - Mac 上最好的 SVN 管理工具。
@@ -217,10 +217,10 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 
 ### 数据库
 
-* [Sequel Pro](http://www.sequelpro.com/) - 一个 MySQL 数据库管理软件。(https://github.com/sequelpro/sequelpro) 
-* [TablePlus](https://tableplus.io) - 支持 PostgreSQL，MySQL，RedShift，MariaDB... 各种数据库的高颜值客户端。 (https://github.com/TablePlus/TablePlus) 
+* [Sequel Pro](http://www.sequelpro.com/) - 一个 MySQL 数据库管理软件
+* [TablePlus](https://tableplus.io) - 支持 PostgreSQL，MySQL，RedShift，MariaDB... 各种数据库的高颜值客户端。 
 * [MySQL Workbench](http://dev.mysql.com/downloads/workbench/) - MySQL 数据库官方管理软件。
-* [Navicat Data Modeler](https://www.navicat.com.cn/products/navicat-data-modeler) - 一个数据库设计工具，它帮助创建高质素的概念、逻辑和物理数据模型。(https://itunes.apple.com/cn/app/navicat-data-modeler-essentials-%E8%A7%86%E8%A7%89%E5%8C%96%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E5%99%A8/id532423082)
+* [Navicat Data Modeler](https://www.navicat.com.cn/products/navicat-data-modeler) - 一个数据库设计工具，它帮助创建高质素的概念、逻辑和物理数据模型。
 * [pgModeler](https://pgmodeler.io) - 是一个专为PostgreSQL设计的开源数据建模工具。 (https://github.com/pgmodeler/pgmodeler) 
 * [SQLPro Studio](http://www.sqlprostudio.com/) - 支持 SQL Server, Postgres, Oracle 以及 MySQL 等主流的数据库可视化管理工具.
 * [Bdash](https://github.com/bdash-app/bdash) - SQL 客户端应用程序，支持 MySQL、 PostgreSQL (Redshift)、 BigQuery。(https://github.com/bdash-app/bdash) 
@@ -318,37 +318,37 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 ### 截图工具
 
 * [Skitch](https://evernote.com/intl/zh-cn/skitch/) - 截图附带强大的标注功能。
-* [Monosnap](https://monosnap.com/) - 制作截图，录制视频共享文件。 (https://itunes.apple.com/cn/app/monosnap/id540348655)
-* [Teampaper Snap](http://teampaper.me/snap/) - 为设计师量身定做的屏幕截图兼注释工具。 (https://itunes.apple.com/cn/app/monosnap/id1199502670)
+* [Monosnap](https://monosnap.com/) - 制作截图，录制视频共享文件。
+* [Teampaper Snap](http://teampaper.me/snap/) - 为设计师量身定做的屏幕截图兼注释工具。 
 * [截图(Jietu)](http://jietu.qq.com/) - 截图附带强大的标注功能，腾讯作品。
 * [Snipaste](https://zh.snipaste.com/) - 一个简单但强大的截图工具。
 * [Snip](http://snip.qq.com/) - 高效的截图工具，支持滚动截屏，腾讯作品。
-* [Xnip](http://xnipapp.com/) - 免费好用的滚动截屏利器。(https://itunes.apple.com/cn/app/xnip-handy-screenshot-app/id1221250572?l=en&mt=12) 
-* [Licecap](http://www.cockos.com/licecap/) - 是一款屏幕录制工具输出 GIF，录制过程中可以随意改变录屏范围。(https://github.com/justinfrankel/licecap) 
-* [KeyCastr](https://github.com/keycastr/keycastr) - 录屏好帮手，实时显示按键操作的小工具。(https://github.com/keycastr/keycastr) 
-* [Shifty](http://shifty.natethompson.io) - 一个菜单栏应用程序，让您更多地控制夜班。 (https://github.com/thompsonate/Shifty)
-* [Kap](https://getkap.co/) - 轻量 GIF 录屏小工具。(https://github.com/wulkano/kap) 
-* [GifCapture](https://github.com/onmyway133/GifCapture) 开源 macOS 截屏生成 Gif 工具。(https://github.com/onmyway133/GifCapture) 
-* [Gifox](https://gifox.io/) 专业的高颜值 GIF 录制应用。(https://itunes.apple.com/cn/app/gifox-gif-recording-and-sharing/id1082624744)
-* [GIF Brewery](https://gfycat.com/gifbrewery) - gives everyone the power to create stunning GIFs from video files.(https://itunes.apple.com/cn/app/gif-brewery-by-gfycat/id1081413713) 
-* [GIPHY Capture](https://giphy.com/apps/giphycapture) - 免费软件的捕捉和分享图片在桌面上。(https://itunes.apple.com/cn/app/giphy-capture-the-gif-maker/id668208984?l=en&mt=12)
-* [ScreenShot PSD](http://txtlabs.com/) - 将屏幕捕获存为分层的 PSD，便于编辑。 (https://itunes.apple.com/cn/app/screenshot-psd/id489880259)
+* [Xnip](http://xnipapp.com/) - 免费好用的滚动截屏利器。
+* [Licecap](http://www.cockos.com/licecap/) - 是一款屏幕录制工具输出 GIF，录制过程中可以随意改变录屏范围
+* [KeyCastr](https://github.com/keycastr/keycastr) - 录屏好帮手，实时显示按键操作的小工具
+* [Shifty](http://shifty.natethompson.io) - 一个菜单栏应用程序，让您更多地控制夜班。 
+* [Kap](https://getkap.co/) - 轻量 GIF 录屏小工具。
+* [GifCapture](https://github.com/onmyway133/GifCapture) 开源 macOS 截屏生成 Gif 工具。
+* [Gifox](https://gifox.io/) 专业的高颜值 GIF 录制应用。
+* [GIF Brewery](https://gfycat.com/gifbrewery) - gives everyone the power to create stunning GIFs from video files.
+* [GIPHY Capture](https://giphy.com/apps/giphycapture) - 免费软件的捕捉和分享图片在桌面上。
+* [ScreenShot PSD](http://txtlabs.com/) - 将屏幕捕获存为分层的 PSD，便于编辑。 
 
 ### 其它工具
 
 * [TinyPNG4Mac](https://github.com/kyleduo/TinyPNG4Mac) - 图片压缩专用开源工具
 * [Image2icon](http://www.img2icnsapp.com) - 将你的图片转换成图标。
-* [ImageAlpha](https://pngmini.com/) - 压缩 PNG 图片，去掉无效的透明。(https://github.com/pornel/ImageAlpha) 
-* [Resize Master](http://www.boltnev.com/resizemaster/) - 更快速和容易批量调整图像和加水印。(https://itunes.apple.com/app/resize-master/id1025306797) 
-* [JPEGmini](http://www.jpegmini.com/) - 将图像尺寸降低高达 80％，而不会影响质量。(https://itunes.apple.com/cn/app/jpegmini-lite/id525742250) 
-* [ImageOptim](https://imageoptim.com/mac) - 压缩图片，删除 EXIF 信息。(https://github.com/ImageOptim/ImageOptim) 
+* [ImageAlpha](https://pngmini.com/) - 压缩 PNG 图片，去掉无效的透明。
+* [Resize Master](http://www.boltnev.com/resizemaster/) - 更快速和容易批量调整图像和加水印。
+* [JPEGmini](http://www.jpegmini.com/) - 将图像尺寸降低高达 80％，而不会影响质量
+* [ImageOptim](https://imageoptim.com/mac) - 压缩图片，删除 EXIF 信息。
 * [Sip](http://theolabrothers.com/) - 收集，整理和分享你的颜色拾色器。
 * [马克鳗](http://getmarkman.com/) - 高效的设计稿标注、测量工具。
 * [Frank DeLoupe](http://jumpzero.com/frank/) - 支持 Retina 的屏幕拾色器。
-* [Spectrum](http://www.eigenlogik.com/spectrum/mac) - 一款可以轻松直观地创建漂亮配色方案的应用程序。(https://itunes.apple.com/cn/app/spectrum/id518156125)
-* [IconKit](http://appersian.net/) - App图标自动生成器。(https://itunes.apple.com/cn/app/iconkit-icon-resizer-for-app/id507135296?mt=12)
-* [APNGb](https://github.com/mancunianetz/APNGb) - 编辑 png 图片格式的软件。 (https://github.com/mancunianetz/APNGb) 
-* [iPic](http://toolinbox.net/iPic/) - 上传图片至七牛、阿里云等图床，支持 Markdown 链接。(https://itunes.apple.com/cn/app/id1101244278?ls=1&mt=12&at=1000lv4R&ct=iPic_me)
+* [Spectrum](http://www.eigenlogik.com/spectrum/mac) - 一款可以轻松直观地创建漂亮配色方案的应用程序
+* [IconKit](http://appersian.net/) - App图标自动生成器。
+* [APNGb](https://github.com/mancunianetz/APNGb) - 编辑 png 图片格式的软件。
+* [iPic](http://toolinbox.net/iPic/) - 上传图片至七牛、阿里云等图床，支持 Markdown 链接。
 * [Iconjar](http://geticonjar.com/) - 图标管理软件，带组织和搜索功能。
 * [svgus](http://www.svgs.us/) - SVG 图片管理器。(https://itunes.apple.com/cn/app/svgsus/id1106867065)
 * [Preset Brewery](https://www.presetbrewery.com) - 将Lightroom预设转换为Adobe Camera Raw的工具。
