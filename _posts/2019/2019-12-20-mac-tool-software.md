@@ -11,15 +11,12 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 ## 目录
 
 ### 说明
-[English](README.md) | [中文](README-zh.md)
-
 ![Open-Source Software][OSS Icon] 表示 **开源软件** ，点击进入 **开源** 仓库；\
 ![Freeware][Freeware Icon] 表示 **免费** 使用，或者个人 **免费** ；\
 ![App Store][app-store Icon] 表示 **App store** 连接地址；\
 ![Awesome List][awesome-list Icon] 表示项目的相应 **Awesome list** 的超链接；
 
-### 目录
-
+### 归档目录
 - [开发者工具](#开发者工具)
 - [测试工具](#测试工具)
 - [命令行工具](#命令行工具)
@@ -913,9 +910,10 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 ### 苹果美国区账号
 ~~`https://freeid.xyz/`~~
 
-### 
-**[⬆ 返回顶部](#目录)**
-
+[OSS Icon]: https://jaywcjlove.github.io/sb/ico/min-oss.svg "开源软件"
+[Freeware Icon]: https://jaywcjlove.github.io/sb/ico/min-free.svg "免费软件"
+[app-store Icon]: https://jaywcjlove.github.io/sb/ico/min-app-store.svg "苹果应用商店软件"
+[awesome-list Icon]: https://jaywcjlove.github.io/sb/ico/min-awesome.svg "Awesome List"
 
 
 
