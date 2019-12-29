@@ -1,12 +1,5 @@
 ---
 layout: post
-title: Laravel定时脚本root运行日志权限问题错误解决
-category: Laravel 
-tags: [Laravel]
----
-
----
-layout: post
 title:  Laravel定时脚本root运行日志权限问题错误解决
 category: Laravel 
 tags: Laravel 
