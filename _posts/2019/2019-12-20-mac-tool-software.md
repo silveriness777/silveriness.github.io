@@ -10,12 +10,6 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 
 ## 目录
 
-### 说明
- 表示 **开源软件** ，点击进入 **开源** 仓库；
- 表示 **免费** 使用，或者个人 **免费** ；
-![App Store][app-store Icon] 表示 **App store** 连接地址；
-![Awesome List][awesome-list Icon] 表示项目的相应 **Awesome list** 的超链接；
-
 ### 归档目录
 
 - [开发者工具](#开发者工具)
