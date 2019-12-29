@@ -4,7 +4,7 @@ title:  mac 电脑上非常好用的 mac 应用程序、软件以及工具
 category: tool 
 tags: mac software 
 keywords: mac,software,mac下常用软件，mac下常用软件及工具,mac下常用工具
-excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件以及工具。希望它们能帮助你快乐高效的工作，欢迎分享。本文参照了[awesome-mac](https://github.com/mystudytime/awesome-mac/blob/master/README-zh.md)"
+excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件以及工具。希望它们能帮助你快乐高效的工作，欢迎分享"
 ---
 
 
