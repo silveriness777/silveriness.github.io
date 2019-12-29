@@ -108,11 +108,12 @@ print(type(message))
 ```
 
 ### 输出
-- 普通的输出
+普通的输出
 ```
 print("输出")
 ```
-- 格式化输出
+
+格式化输出
 ```
 age = 18
 name = "da bai"
@@ -133,34 +134,34 @@ print("我的姓名是%s,年龄是%d" % (name, age))
 %f                浮点实数
 ```
 
-- 换行输出
+换行输出
 ```
 print("1234567890\n-------")
 ```
 
 ### 运算符
-- 算术运算符
+算术运算符
 ![](https://static.studytime.xin/image/articles/20191230011842.png)
 
-- 比较运算符
+比较运算符
 ![](https://static.studytime.xin/image/articles/20191230011854.png)
 
-- 赋值运算符
+赋值运算符
 ![](https://static.studytime.xin/image/articles/20191230011910.png)
 
-- 逻辑运算符
+逻辑运算符
 ![](https://static.studytime.xin/image/articles/20191230011938.png)
 
-- 成员运算
+成员运算
 ![](https://static.studytime.xin/image/articles/20191230011947.png)
 
-- 身份运算
+身份运算
 ![](https://static.studytime.xin/image/articles/20191230011958.png)
 
-- 位运算
+位运算
 ![](https://static.studytime.xin/image/articles/20191230012008.png)
 
-- 运算符优先级
+运算符优先级
 ![](https://static.studytime.xin/image/articles/20191230012038.png)
 
 
@@ -190,16 +191,21 @@ print("a=%d"%b)
 
 ### 作业练习
 1. 说出变量名字，可以由哪些字符组成
+
 2. 写出变量命名时的规则
+
 3. 说出什么是驼峰法（大驼峰、小驼峰）
+
 4. 编写程序，完成以下要求：
 提示用户进行输入数据
 获取用户的数据数据（需要获取2个）
 对获取的两个数字进行求和运行，并输出相应的结果
+
 5. 编写程序，完成以下要求：
 提示用户进行输入数据
 获取用户的数据数据（需要获取2个）
 对获取的两个数字进行减法运行，并输出相应的结果
+
 6. 编写程序，完成以下信息的显示:
 > ==================================
     =        欢迎进入到身份认证系统V1.0
