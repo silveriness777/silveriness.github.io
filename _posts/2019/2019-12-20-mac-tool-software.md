@@ -4,7 +4,7 @@ title:  mac 电脑上非常好用的 mac 应用程序、软件以及工具
 category: tool 
 tags: mac software 
 keywords: mac,software,mac下常用软件，mac下常用软件及工具,mac下常用工具
-excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件以及工具。希望它们能帮助你快乐高效的工作，欢迎分享。本文参照了[awesome-mac](https://github.com/mystudytime/awesome-mac/blob/master/README-zh.md)"
+excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件以及工具。希望它们能帮助你快乐高效的工作，欢迎分享。"
 ---
 
 
@@ -17,6 +17,9 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 ![Awesome List][awesome-list Icon] 表示项目的相应 **Awesome list** 的超链接；
 
 ### 归档目录
+
+### 目录
+
 - [开发者工具](#开发者工具)
 - [测试工具](#测试工具)
 - [命令行工具](#命令行工具)
@@ -45,9 +48,9 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 
 
 
-## 开发者工具
+### 开发者工具
 
-### 编辑器
+#### 编辑器
 
 *一种用于编辑纯文本文件的程序，建议使用免费开源的编辑器*
 
@@ -129,7 +132,7 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 * [Swiftify](https://objectivec2swift.com/#/xcode-extension/) - Xcode ＆ Finder 扩展 Objective-C 转 Swift 代码转换器
 * [Woodpecker](http://www.woodpeck.cn) - 在Mac上查看、编辑iOS App的沙盒文件, UserDefaults, Keychain项 [![App Store][app-store Icon]](https://itunes.apple.com/cn/app/woodpecker/id1333548463)
 
-### 正则编辑器
+#### 正则编辑器
 
 * [Patterns](http://krillapps.com/patterns/) - 正则表达式编辑器。
 * [Regex](http://motionobj.com/regex/?utm_source=RegexApp&utm_medium=app) - 感觉是用过最漂亮的正则表达式测试工具。
@@ -142,7 +145,7 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 * [Postman](https://www.getpostman.com) - Postman 帮助我们快速测试 API。![Freeware][Freeware Icon]
 * [Insomnia](https://insomnia.rest/) - 最直观的跨平台 REST API 客户端。 [![Open-Source Software][OSS Icon]](https://github.com/getinsomnia/insomnia) ![Freeware][Freeware Icon]
 
-### 网络分析
+#### 网络分析
 
 * [Wireshark](https://www.wireshark.org) - 世界上最广泛使用的网络协议分析软件。 [![Open-Source Software][OSS Icon]](https://github.com/wireshark/wireshark) ![Freeware][Freeware Icon]
 * [Charles](https://www.charlesproxy.com/) - 一个代理工具，允许你查看所有的 HTTP 和 HTTPS 流量。
@@ -151,7 +154,7 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 * [Paw](https://luckymarmot.com/paw) - 先进的 HTTP 客户端。
 * [Proxie](https://proxieapp.com/) - HTTP 调试客户端。 [![App Store][app-store Icon]](https://itunes.apple.com/cn/app/cellist/id897814548)
 
-### 命令行工具
+#### 命令行工具
 
 > A curated list of shell commands and tools specific to OS X. [![Awesome List][awesome-list Icon]](https://github.com/herrbischoff/awesome-macos-command-line#readme)
 
@@ -187,12 +190,12 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 * [Zsh](https://www.zsh.org) - 一个专为交互式使用而设计的命令行 shell。 [![Open-Source Software][OSS Icon]](https://sourceforge.net/projects/zsh/) ![Freeware][Freeware Icon] [![Awesome List][awesome-list Icon]](https://github.com/unixorn/awesome-zsh-plugins#readme)
 * [spaceship](https://github.com/denysdovhan/spaceship-prompt) - 一个简约，功能强大且极易定制的Zsh提示。 [![Open-Source Software][OSS Icon]](https://github.com/denysdovhan/spaceship-prompt) ![Freeware][Freeware Icon]
 
-### 版本控制
+#### 版本控制
 
 * [Git](https://git-scm.com/) - 版本控制工具，官网提供[数十种 GUI 客户端](https://git-scm.com/download/gui/mac) for Mac。[![Open-Source Software][OSS Icon] ![Freeware][Freeware Icon]](https://github.com/git/git)
 * [SVN](http://subversion.apache.org/) - 版本控制工具。![Freeware][Freeware Icon]
 
-### GUI
+#### GUI
 
 * [GitFinder](https://gitfinder.com/) - 一个快速和轻量级的 Git 客户端的 Mac 与 Finder 集成。
 * [Fork](https://git-fork.com/) - 一个快速友好的 Git 客户端。 ![Freeware][Freeware Icon]
@@ -210,7 +213,7 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 * [Sublime Merge](https://www.sublimemerge.com/) -  Git客户端，来自Sublime Text的制造商。
 * [GitKraken](https://www.gitkraken.com/) - 最流行的图形用户界面的 git 管理工具。
 
-### 版本控制系统
+#### 版本控制系统
 
 * [GitLab](http://gitlab.com/) - 一个用于仓库管理系统的开源项目。![Freeware][Freeware Icon]
 * [GitHub](https://github.com) GitHub 托管代码，项目管理，演示部署，瞧，您现在就在访问GitHub。![Freeware][Freeware Icon]
@@ -221,7 +224,7 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 * [Gitblit](http://www.gitblit.com/) Java 版本 Git 代码托管，项目管理。[![Open-Source Software][OSS Icon]](https://github.com/gitblit/gitblit) ![Freeware][Freeware Icon]
 * [Gitea](https://gitea.io) - Gogs 的 fork 版本。![Open-Source Software][OSS Icon]
 
-### 数据库
+#### 数据库
 
 * [Sequel Pro](http://www.sequelpro.com/) - 一个 MySQL 数据库管理软件。[![Open-Source Software][OSS Icon]](https://github.com/sequelpro/sequelpro) ![Freeware][Freeware Icon]
 * [TablePlus](https://tableplus.io) - 支持 PostgreSQL，MySQL，RedShift，MariaDB... 各种数据库的高颜值客户端。 [![Open-Source Software][OSS Icon]](https://github.com/TablePlus/TablePlus) ![Freeware][Freeware Icon]
@@ -253,7 +256,7 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 * [mongoDB.app](https://gcollazo.github.io/mongodbapp/) - 在Mac 上最简单的使用 MongoDB [![Open-Source Software][OSS Icon]]
 * [Mongo Management Studio](http://www.litixsoft.de/english/mms/) - MongoDB 图形化客户端管理软件。
 
-## 设计和产品
+### 设计和产品
 
 ### 设计工具
 
@@ -405,7 +408,7 @@ excerpt: "本文整理了 mac 电脑上非常好用的 mac 应用程序、软件
 * [WeeChat](https://weechat.org/) - 一个命令行聊天客户端。![Freeware][Freeware Icon]
 * [Rambox](http://rambox.pro/) - 消息和电子邮件应用程序，将常见的Web应用程序组合成一个程序。 [![Open-Source Software][OSS Icon]](https://github.com/saenzramiro/rambox) ![Freeware][Freeware Icon]
 * [Keybase](https://keybase.io/) - 一个安全的消息应用程序! [![Open-Source Software][OSS Icon]](https://github.com/keybase) ![Freeware][Freeware Icon]
-
+ 
 ### Email
 
 * [Spark](https://sparkmailapp.com/) - 新推出的快速邮件客户端支持 Mac 和 iPhone。![Freeware][Freeware Icon]
