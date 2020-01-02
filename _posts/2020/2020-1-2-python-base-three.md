@@ -79,9 +79,9 @@ else:
 ```
 
 - 练习
-```
-import random
 
+```python
+import random
 player = input('请输入：剪刀(0)  石头(1)  布(2):')
 player = int(player)
 
