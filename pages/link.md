@@ -12,7 +12,10 @@ url: /link.html
 
 - [纯洁的微笑](http://www.ityouknow.com/) - 分享技术，品味人生
 - [iBooker](https://docs.apachecn.org/) - iBooker-可以允许不完美，但不能不做
-- [ 程序猿DD](http://blog.didispace.com) -  程序猿DD
+- [程序猿DD](http://blog.didispace.com) -  程序猿DD
+- [开猿 笔记](https://unnue.com) -  开猿 笔记
+- [何鑫个人博客](https://www.besthexin.cn/) -  何鑫个人博客
+- [梁钟霖个人博客](https://www.liangzl.com) -  梁钟霖个人博客
 
 ## 技术网站
 - [Spark中文文档](http://spark.apachecn.org/#/) - Spark中文文档
