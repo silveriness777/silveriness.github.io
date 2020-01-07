@@ -16,6 +16,7 @@ url: /link.html
 - [开猿 笔记](https://unnue.com) -  开猿 笔记
 - [何鑫个人博客](https://www.besthexin.cn/) -  何鑫个人博客
 - [梁钟霖个人博客](https://www.liangzl.com) -  梁钟霖个人博客
+- [杨学峰个人博客](https://www.yangsihan.com) -  杨学峰个人博客
 
 ## 技术网站
 - [Spark中文文档](http://spark.apachecn.org/#/) - Spark中文文档
