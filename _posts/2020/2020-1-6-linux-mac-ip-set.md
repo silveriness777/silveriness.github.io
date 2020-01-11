@@ -76,8 +76,7 @@ excerpt: "介绍的Mac VMware Fusion CentOS7配置静态IP的教程图解,希望
 
 ![](https://static.studytime.xin/image/articles/20200111133613.png)
 
-2. 通过Mac终端进入VMware Fusion的vmnet8目录
-cd /Library/Preferences/VMware\ Fusion/vmnet8
+2. 通过Mac终端进入VMware Fusion的vmnet8目录`cd /Library/Preferences/VMware\ Fusion/vmnet8`
 
 ![](https://static.studytime.xin/image/articles/20200111133738.png)
 
