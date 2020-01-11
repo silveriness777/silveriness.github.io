@@ -69,27 +69,28 @@ excerpt: "介绍的Mac VMware Fusion CentOS7配置静态IP的教程图解,希望
 ### 设置root账号密码
 ![](https://static.studytime.xin/image/articles/20200111133553.png)
 
-配置静态IP
-1. 把网络配置改成nat模式
+### 配置静态IP
+
+#### 把网络配置改成nat模式
 
 ![](https://static.studytime.xin/image/articles/20200111133602.png)
 
 ![](https://static.studytime.xin/image/articles/20200111133613.png)
 
-2. 通过Mac终端进入VMware Fusion的vmnet8目录`cd /Library/Preferences/VMware\ Fusion/vmnet8`
+#### 通过Mac终端进入VMware Fusion的vmnet8目录`cd /Library/Preferences/VMware\ Fusion/vmnet8`
 
 ![](https://static.studytime.xin/image/articles/20200111133738.png)
 
-3. 查看nat.conf内容`cat nat.conf`
+#### 查看nat.conf内容`cat nat.conf`
 记住红框中的数据，下面配置时需要用到
 ![](https://static.studytime.xin/image/articles/20200111133850.png)
 
-4. 查看cat dhcpd.conf内容`cat dhcpd.conf`
+#### 查看cat dhcpd.conf内容`cat dhcpd.conf`
 ![](https://static.studytime.xin/image/articles/20200111135915.png)
 
 注意range 这个是虚拟机允许选择的静态ip地址范围，自定义的静态ip地址必须要在这个范围内(本文打算使用172.16.104.130为例介绍)
 
-5. 获取DNS(在mac系统偏好设置—>网络—>)
+#### 获取DNS(在mac系统偏好设置—>网络—>)
 
 ![](https://static.studytime.xin/image/articles/20200111134020.png)
 
@@ -98,7 +99,7 @@ excerpt: "介绍的Mac VMware Fusion CentOS7配置静态IP的教程图解,希望
 ![](https://static.studytime.xin/image/articles/20200111135749.png)
 
 
-6. 登录CentOS7、开始配置静态ip
+#### 登录CentOS7、开始配置静态ip
 ![](https://static.studytime.xin/image/articles/20200111135249.png)
 
 ```php
@@ -109,15 +110,15 @@ vim ifcfg-ens33
 我们将它改成如下配置:
 ![](https://static.studytime.xin/image/articles/20200111134329.png)
 
-7. 保存之后，重启服务使修改生效`service network restart`
+#### 保存之后，重启服务使修改生效`service network restart`
 ![](https://static.studytime.xin/image/articles/20200111135338.png)
 
-8. ping一下百度看看，成功Ping到
+#### ping一下百度看看，成功Ping到
 ![](https://static.studytime.xin/image/articles/20200111135413.png)
 
-9. 软件连接
+#### 软件连接
 ![](https://static.studytime.xin/image/articles/20200111135437.png)
 
-10. 注意事项
+#### 注意事项
 如果你换了一个地方上网的话，可能会发现你的虚拟机有不通了，那是因为DNS地址发生了变化，此时只需要再次编辑ifcfg-enxxx文件，然后加上你现在网络的DNS地址即可
 
