@@ -100,18 +100,17 @@ cd /Library/Preferences/VMware\ Fusion/vmnet8
 
 
 6. 登录CentOS7、开始配置静态ip
-
 ![](https://static.studytime.xin/image/articles/20200111135249.png)
-```$xslt
+
+```php
 cd /etc/sysconfig/network-scripts
 找到ifcfg-en开头的文件,上图中我的是ifcfg-ens33
 vim ifcfg-ens33
 ```
-
-我们将它改成如下配置
+我们将它改成如下配置:
 ![](https://static.studytime.xin/image/articles/20200111134329.png)
 
-7.  保存之后，重启服务使修改生效`service network restart`
+7. 保存之后，重启服务使修改生效`service network restart`
 ![](https://static.studytime.xin/image/articles/20200111135338.png)
 
 8. ping一下百度看看，成功Ping到
