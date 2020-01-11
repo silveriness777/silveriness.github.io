@@ -86,7 +86,7 @@ cd /Library/Preferences/VMware\ Fusion/vmnet8
 ![](https://static.studytime.xin/image/articles/20200111133850.png)
 
 4. 查看cat dhcpd.conf内容`cat dhcpd.conf`
-![8e48ad91e4110dfc56c0e8591c5f17ec.png](evernotecid://1E37A17E-E986-4FB4-B232-333FD0154A40/appyinxiangcom/18253885/ENResource/p183)
+![](https://static.studytime.xin/image/articles/20200111135915.png)
 
 注意range 这个是虚拟机允许选择的静态ip地址范围，自定义的静态ip地址必须要在这个范围内(本文打算使用172.16.104.130为例介绍)
 
@@ -96,7 +96,7 @@ cd /Library/Preferences/VMware\ Fusion/vmnet8
 
 ![](https://static.studytime.xin/image/articles/20200111134136.png)
 
-![bff1fa17a09f71c559b4cd3c9ff39b00.png](evernotecid://1E37A17E-E986-4FB4-B232-333FD0154A40/appyinxiangcom/18253885/ENResource/p184)
+![](https://static.studytime.xin/image/articles/20200111135749.png)
 
 
 6. 登录CentOS7、开始配置静态ip
