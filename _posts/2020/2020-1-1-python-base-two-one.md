@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Python基础(二)：1. 数据类型-字符串
+title:  Python基础(二)：数据类型-字符串
 category: Python 
 tags: Pythpn 
 keywords: Python 
