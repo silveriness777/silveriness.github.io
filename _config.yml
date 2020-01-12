@@ -24,7 +24,7 @@ sfblog_url: https://segmentfault.com/u/baihe
 base_url: https://www.studytime.xin
 baseurl: ''
 enforce_ssl: https://www.studytime.xin
-static-url-version: 20190905
+static-url-version: 20200112
 
 ## Gem
 plugins:
@@ -110,15 +110,15 @@ navs:
         subLabel: Laravel
 
   - href: /python.html
-    label: python
+    label: Python
     target: _self
     subnav:
       -
         subHref: /python.html
-        subLabel: python技术
+        subLabel: Python技术
       -
         subHref: /python-base.html
-        subLabel: python基础
+        subLabel: Python基础
 
   -
     href: /archives.html
@@ -147,6 +147,7 @@ classes:
     href: /Tool.html
     name: 工具
     describe: 工欲善其事，必先利其器
+
   - href: /mysql.html
     name: mysql
     describe: 数据库
@@ -166,18 +167,11 @@ side_bar_repo_limit: 5 # Number of repos to show
 google :
   tracking_id : 'UA-131499684-1'
 
-
-# For about.html. Fell free to create your own!
-skill_software_keywords: [Java, MySQL, Oracle, Design Patterns]
-skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
-skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, ExpressJS, MongoDB, Redis, PHP,  Boostrap]
-
-
 # ---------------- #
 #      Comments    #
 # ---------------- #
-# support provider: disqus, gitment, gitalk
 comments_provider: gitalk
+
 gitalk:
   owner: MyStudytime
   repo:  blog-comments
