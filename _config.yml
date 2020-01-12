@@ -92,9 +92,11 @@ navs:
     label: Python
     target: _self
     subnav:
-      - subHref: /python.html
+      -
+        subHref: /python.html
         subLabel: python技术
-      - subHref: /python-base.html
+      -
+        subHref: /python-base.html
         subLabel: python基础
 
   -
