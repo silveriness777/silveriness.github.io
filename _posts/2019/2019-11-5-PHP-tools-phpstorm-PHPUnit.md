@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何在 mac 上使用 PHPStorm 进行 PHPUnit 单元测试
-category: tool PHPUnit
+category: PHP
 tags: [tool]
 excerpt: "PHPUnit是一个轻量级的PHP测试框架，如何在 mac 上安装和使用，本文做了详细的说明。"
 ---

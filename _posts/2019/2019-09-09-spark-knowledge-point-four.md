@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Spark系列文章（四）:Spark之RDD
-category: bigdata 
+category: spark 
 tags: 大数据 Spark
 keywords: bigdata,Spark,Spark学习之路,Spark系列文章,Spark初识,Spark RDD
 excerpt: "RDD（Resilient Distributed Dataset）叫做弹性分布式数据集，是Spark中最基本的数据抽象，代表一个不可变、可分区、里面的元素可并行计算的集合。"
