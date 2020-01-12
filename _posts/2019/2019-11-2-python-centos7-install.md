@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  CentOS7下将Python的版本升级为3.7
-category: Python 
+category: python 
 tags: Pythpn 
 keywords: Python 
 excerpt: "CentOS7下将Python的版本升级为3.7"
