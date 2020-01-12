@@ -67,16 +67,12 @@ navs:
     href: /
     label: Home
 
-  - href: /spring-boot.html
-    label: Spring Boot
+  - href: /java.html
+    label: Java
     target: _self
     subnav:
-
       - subHref: /spring-boot.html
         subLabel: Spring Boot
-
-      - subHref: /spring-cloud.html
-        subLabel: Spring Cloud
 
   - href: /bigdata.html
     label: Bigdata
@@ -100,7 +96,7 @@ navs:
         subLabel: Laravel
 
   - href: /python.html
-    label: Python
+    label: python
     target: _self
     subnav:
       -

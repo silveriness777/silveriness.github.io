@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Python基础(二)：数据类型-tuple元组
-category: Python 
+category: python-base
 tags: Pythpn 
 keywords: Python 
 excerpt: "tuple元组可以理解为元素值不变的list"

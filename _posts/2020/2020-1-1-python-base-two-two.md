@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Python基础(二)：数据类型-list列表
-category: Python 
+category: python-base
 tags: Pythpn 
 keywords: Python 
 excerpt: "list为python的基本元素之一。"

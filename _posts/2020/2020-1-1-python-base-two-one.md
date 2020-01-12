@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Python基础(二)：数据类型-字符串
-category: Python 
+category: python-base
 tags: Pythpn 
 keywords: Python 
 excerpt: "双引号或者单引号中的数据，就是字符串。"
