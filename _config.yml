@@ -61,6 +61,47 @@ syntax_highlighter_opts:
 paginate: 10
 paginate_path: 'page:num'
 
+
+# Navigation. top menu list
+menus:
+
+
+  -
+    href: /cartoon.html
+    label: 漫画
+    target: _self
+
+  -
+    href: /it.html
+    label: 深度
+    target: _self
+
+  -
+    href: /zsxq.html
+    label: 挣钱
+    target: _self
+
+  -
+    href: /life.html
+    label: 故事
+    target: _self
+
+  -
+    href: /arch.html
+    label: 架构
+    target: _self
+
+  -
+    href: /link.html
+    label: 友链
+    target: _self
+
+  -
+    href: /about.html
+    label: 关于
+    target: _self
+
+
 # Navigation. If you do not like these modules, just remove them :D
 navs:
   -
