@@ -1,10 +1,9 @@
 /** Only for index.html **/
 
-/*.site-header{*/
-/*    color: #fff;*/
-/*    background: #4771c1;*/
-/*}*/
-
+.site-header{
+    color: #fff;
+    background: #4771c1;
+}
 .site-header #site-header-brand {
     color: #fff;
 }
