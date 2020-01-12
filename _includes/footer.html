@@ -22,7 +22,7 @@
                     <a target="_blank" href="https://segmentfault.com/u/baihe">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                     <i class="fa  fa-stack-1x fa-inverse">思否</i>
+                      <i class="fa  fa-stack-1x fa-inverse">Sf</i>
                   </span>
                     </a>
                 </li>
@@ -31,7 +31,8 @@
 
         <div class="site-footer-links mobile-hidden">
             {% for nav in site.labels %}
-            <a href="{{ nav.href }}" title="{{ nav.name }}" target="{{ nav.target | default: _self }}">{{ nav.name }}</a>
+            <a href="{{ nav.href }}" title="{{ nav.name }}" target="{{ nav.target | default: _self }}">{{ nav.name
+                }}</a>
             {% endfor %}
             <br>
             总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;次 · 独立访客&nbsp;<span

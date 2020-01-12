@@ -69,9 +69,33 @@ navs:
 
   - href: /bigdata.html
     label: Bigdata
+    target: _self
+    subnav:
+      - subHref: /bigdata.html
+        subLabel: 大数据
+      - subHref: /hive.html
+        subLabel: Hive
+      - subHref: /spark.html
+        subLabel: Spark
+
   -
     href: /PHP.html
     label: PHP
+    target: _self
+    subnav:
+      - subHref: /PHP.html
+        subLabel: PHP
+      - subHref: /Laravel.html
+        subLabel: Laravel
+
+  - href: /python.html
+    label: Python
+    target: _self
+    subnav:
+      - subHref: /python.html
+        subLabel: python技术
+      - subHref: /python-base.html
+        subLabel: python基础
 
   -
     href: /archives.html
