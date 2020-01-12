@@ -1,7 +1,7 @@
 ---
 layout: default
 menu: home
-css: ['index.css?version=20190905', 'sidebar-popular-repo.css']
+css: ['index.css', 'sidebar-popular-repo.css']
 ---
 <section class="jumbotron">
     <div class="container">
@@ -33,15 +33,13 @@ css: ['index.css?version=20190905', 'sidebar-popular-repo.css']
                     </p>
                     <br>
                     <div class="com-topic-tag topic">
-                            {% for tag in post.tags %}
-                            <a class="com-topic-title topic-tag-title" style="margin-right: 8px;">{{tag}}</a>
-                            {% endfor %}
+                        {% for tag in post.tags %}
+                        <a class="com-topic-title topic-tag-title" style="margin-right: 8px;">{{tag}}</a>
+                        {% endfor %}
                         <div class="post-list-public-date">
                             {{ post.date | date: "%Y/%m/%d" }}
                         </div>
                     </div>
-
-<!--                    <div class="post-list-public-date" style="padding-right: 0px;">{{ post.date | date: "%Y/%m/%d" }}</div>-->
                 </li>
                 {% endfor %}
             </ol>

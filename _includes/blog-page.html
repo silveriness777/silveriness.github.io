@@ -1,7 +1,5 @@
 <div class="row">
-
     <div class="col-md-9">
-
         <!-- Blog list -->
         <ul id="posts-list">
             {% for post in site.posts %}
@@ -15,14 +13,6 @@
             {% endfor %}
         </ul>
 
-        {% if site.leancloud.enable %}
-        <div>
-  <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
-    Visited:
-    <a href="#"><span class="leancloud-visitors-count"></span>次</a>
-  </span>
-        </div>
-        {% endif %}
 
         <!-- Pagination -->
         {% include pagination.html %}
