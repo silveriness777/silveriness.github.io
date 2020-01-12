@@ -15,10 +15,8 @@
     left: 0 !important;
     right: 0;
     z-index: 103;
-
     color: #000;
     background: #fff;
-
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -267,8 +265,9 @@ blockquote {
 .site-header-nav-item > a {
     display: block;
     padding: 10px;
-    /*color: #000;*/
+    color: #000;
 }
+
 .site-header-nav-item .submenu {
     display: none;
     position: absolute;
@@ -290,6 +289,7 @@ blockquote {
     text-align: center;
     border-bottom: 1px solid #dcdcdc;
 }
+
 .site-header-nav-item .submenu li:last-child {
     border-bottom: none;
 }
