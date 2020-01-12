@@ -67,6 +67,17 @@ navs:
     href: /
     label: Home
 
+  - href: /spring-boot.html
+    label: Spring Boot
+    target: _self
+    subnav:
+
+      - subHref: /spring-boot.html
+        subLabel: Spring Boot
+
+      - subHref: /spring-cloud.html
+        subLabel: Spring Cloud
+
   - href: /bigdata.html
     label: Bigdata
     target: _self
