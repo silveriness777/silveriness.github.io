@@ -5,8 +5,8 @@ titlebar: Tool
 subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; Tool系列文章
 menu: Tool
 css: ['blog-page.css']
-permalink: /Tool.html
-url: /Tool.html
+permalink: /tool.html
+url: /tool.html
 ---
 
 <div class="row">
