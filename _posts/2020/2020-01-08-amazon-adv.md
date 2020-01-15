@@ -100,7 +100,7 @@ $app->client->profileId = 1234567890;
 ```
 
 ### Portfolios 广告组合
-- listPortfolios 广告组合列表
+#### listPortfolios 广告组合列表
 
 ```php
 $app->portfolios->listPortfolios(['portfolioId'=>12,'portfolioState'=>'enable']);
@@ -135,7 +135,7 @@ $app->portfolios->listPortfolios(['portfolioId'=>12,'portfolioState'=>'enable'])
 ]
 ```
 
-- listPortfoliosEx 广告组合列表扩展字段
+#### listPortfoliosEx 广告组合列表扩展字段
 
 ```
 $app->portfolios->listPortfoliosEx(['portfolioId'=>12,'portfolioState'=>'enable']);
@@ -176,7 +176,7 @@ $app->portfolios->listPortfoliosEx(['portfolioId'=>12,'portfolioState'=>'enable'
 ]
 ```
 
-- getPortfolio 广告组合详情
+#### getPortfolio 广告组合详情
 
 ```
 $app->portfolios->getPortfolio(1234567890);
@@ -195,7 +195,8 @@ $app->portfolios->getPortfolio(1234567890);
     "state": "enabled"
 ]
 ```
-- getPortfolioEx 广告组合扩展字段
+#### getPortfolioEx 广告组合扩展字段
+
 ```
 $app->portfolios->getPortfolioEx(1234567890);
 
@@ -215,7 +216,9 @@ $app->portfolios->getPortfolioEx(1234567890);
     "servingStatus": "PENDING_START_DATE"
 ]
 ```
-- createPortfolios 创建广告组合（批量）
+
+#### createPortfolios 创建广告组合（批量）
+
 ```
 $params = [
     [
@@ -258,7 +261,9 @@ $result = $app->portfolios->createPortfolios($params);
     ]
 ]
 ```
-- updatePortfolios 更新广告组合（批量）
+
+#### updatePortfolios 更新广告组合（批量）
+
 ```
 $params = [
     [
@@ -308,7 +313,7 @@ $result = $app->portfolios->updatePortfolios($params);
 ## SponsoredDisplay
 
 ### 入门
-```
+```php
 use easyAmazonAdv\Factory;
 
 $config = [
@@ -322,14 +327,15 @@ $app    = Factory::SponsoredDisplay($config);
 ```
 
 ### 设置profileId
-```
+```php
 $app->client->profileId = 1234567890;
 ```
 
 ### Campaigns  广告活动
 
-- getCampaign 广告活动详情
-```
+#### getCampaign 广告活动详情
+
+```php
 $result = $app->campaigns->listCampaigns(1234567890);
 
 [
@@ -343,8 +349,10 @@ $result = $app->campaigns->listCampaigns(1234567890);
   "state": "enabled"
 ]
 ```
-- getCampaignEx 广告活动详情（支持扩展字段展示）
-```
+
+####  getCampaignEx 广告活动详情（支持扩展字段展示）
+
+```php
 $result = $app->campaigns->listCampaigns(1234567890);
 
 [
@@ -360,12 +368,11 @@ $result = $app->campaigns->listCampaigns(1234567890);
   "creationDate": 0,
   "lastUpdatedDate": 0
 ]
-
-```
-- createCampaigns 创建广告活动
-
 ```
 
+#### createCampaigns 创建广告活动
+
+```php
 $params = [
     [
         "name" => "My Campaign One",
@@ -386,11 +393,11 @@ $result = $app->campaigns->createCampaigns(params);
     "campaignId": 173284463890123
   ]
 ]
-
-```
-- updateCampaigns 
 ```
 
+#### updateCampaigns 
+
+```php
 $params = [
     [
         "campaignId" => 173284463890123,
@@ -411,8 +418,10 @@ $result = $app->campaigns->updateCampaigns(params);
 ]
 
 ```
-- archiveCampaign 归档广告活动
-```
+
+#### archiveCampaign 归档广告活动
+
+```php
 $result = $app->campaigns->archiveCampaign(173284463890123);
 
 [
@@ -421,8 +430,9 @@ $result = $app->campaigns->archiveCampaign(173284463890123);
 ]
 ```
 
-- listCampaigns
-```
+#### listCampaigns
+
+```php
 $result = = $app->campaigns->listCampaigns(["stateFilter" => "enabled"]);
 
 [
@@ -437,11 +447,11 @@ $result = = $app->campaigns->listCampaigns(["stateFilter" => "enabled"]);
     "state": "enabled"
   ]
 ]
-
 ```
 
-- listCampaignsEx
-```
+#### listCampaignsEx
+
+```php
 $result = = $app->campaigns->listCampaignsEx(["stateFilter" => "enabled"]);
 
 [
