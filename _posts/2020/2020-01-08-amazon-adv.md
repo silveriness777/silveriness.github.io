@@ -1,9 +1,9 @@
 ---
 layout: post
-title: easy-amazon-advertising 文档
+title: 亚马逊广告api v2 easy-amazon-advertising文档
 category: sdk 
 tags: [amazon advertising v2 sdk amazon-advertising amazon-adv]
-excerpt: "easy-amazon-advertising  是一个开源的非官方的[亚马逊广告](https://advertising.amazon.com/API/docs/en-us/)业务sdk。"
+excerpt: "easy-amazon-advertising  是一个开源的非官方的亚马逊广告业务sdk。"
 ---
 
 ## 概述
@@ -22,7 +22,7 @@ pimple/pimple: ~3.0
 
 ## 安装
 使用composer安装
-```
+```php
 composer require mystudytime/easy-amazon-advertising
 ```
 
@@ -101,7 +101,8 @@ $app->client->profileId = 1234567890;
 
 ### Portfolios 广告组合
 - listPortfolios 广告组合列表
-```
+
+```php
 $app->portfolios->listPortfolios(['portfolioId'=>12,'portfolioState'=>'enable']);
 
 [
@@ -132,12 +133,12 @@ $app->portfolios->listPortfolios(['portfolioId'=>12,'portfolioState'=>'enable'])
         "state": "enabled",
     ]
 ]
-
 ```
+
 - listPortfoliosEx 广告组合列表扩展字段
+
 ```
 $app->portfolios->listPortfoliosEx(['portfolioId'=>12,'portfolioState'=>'enable']);
-
 
 [
     [
@@ -174,7 +175,9 @@ $app->portfolios->listPortfoliosEx(['portfolioId'=>12,'portfolioState'=>'enable'
     ]
 ]
 ```
+
 - getPortfolio 广告组合详情
+
 ```
 $app->portfolios->getPortfolio(1234567890);
 
