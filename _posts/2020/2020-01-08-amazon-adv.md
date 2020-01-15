@@ -45,7 +45,7 @@ composer require mystudytime/easy-amazon-advertising
 ## BaseService
 
 ### 入门
-```
+```php
 use easyAmazonAdv\Factory;
 
 $config = [
