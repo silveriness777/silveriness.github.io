@@ -3,7 +3,7 @@ layout: post
 title: 亚马逊广告api v2 easy-amazon-advertising文档
 category: sdk 
 tags: [amazon advertising]
-keywords:amazon advertising v2 sdk amazon-advertising amazon-adv
+keywords: amazon advertising v2 sdk amazon-advertising amazon-adv
 excerpt: "easy-amazon-advertising  是一个开源的非官方的亚马逊广告业务sdk。"
 ---
 
