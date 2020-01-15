@@ -137,7 +137,7 @@ $app->portfolios->listPortfolios(['portfolioId'=>12,'portfolioState'=>'enable'])
 
 #### listPortfoliosEx 广告组合列表扩展字段
 
-```
+```php
 $app->portfolios->listPortfoliosEx(['portfolioId'=>12,'portfolioState'=>'enable']);
 
 [
@@ -178,7 +178,7 @@ $app->portfolios->listPortfoliosEx(['portfolioId'=>12,'portfolioState'=>'enable'
 
 #### getPortfolio 广告组合详情
 
-```
+```php
 $app->portfolios->getPortfolio(1234567890);
 
 {
@@ -197,7 +197,7 @@ $app->portfolios->getPortfolio(1234567890);
 ```
 #### getPortfolioEx 广告组合扩展字段
 
-```
+```php
 $app->portfolios->getPortfolioEx(1234567890);
 
 [
@@ -219,7 +219,7 @@ $app->portfolios->getPortfolioEx(1234567890);
 
 #### createPortfolios 创建广告组合（批量）
 
-```
+```php
 $params = [
     [
         'name' =>  'My Portfolios name',
@@ -264,7 +264,7 @@ $result = $app->portfolios->createPortfolios($params);
 
 #### updatePortfolios 更新广告组合（批量）
 
-```
+```php
 $params = [
     [
         'portfolioId'=>1234567890,
