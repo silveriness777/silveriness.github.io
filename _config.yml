@@ -11,7 +11,7 @@ subtitle: 记录学习时光，重拾学习乐趣
 name: studytime
 email: b_aihe@163.com
 description: 本站是白贺的技术分享博客。内容涵盖生活故事、PHP后端技术、Java后端技术、大数据、大数据生态、bigData、Spring Boot、微服务架构、高可用架构等相关的研究与知识分享。
-keywords: studytime,白贺,Bai He,Big Data,bigdata,Java,Spark,Sqoop,Hadoop,Kafka,Flume、Hive、Hbase、Spring,SpringBoot,生活故事,架构,大数据,开发者,编程,代码,开源,Developer,Programmer,Coder,技术博客
+keywords: 个人博客,大数据学习之路,亚马逊广告api,Java知识分享,PHP后端成长,Python成长路线,mac研发,PHPer成长路线,技术分享
 encoding: "utf-8"
 favicon: favicon.png
 static-url: https://static.studytime.xin/studytime-Blog
@@ -55,7 +55,7 @@ kramdown:
   syntax_highlighter: rouge
 
 syntax_highlighter_opts:
-   coderay_line_numbers:  nil
+  coderay_line_numbers:  nil
 
 # Pagination
 paginate: 10
@@ -64,21 +64,18 @@ paginate_path: 'page:num'
 
 # Navigation. top menu list
 menus:
-  -
-    href: /link.html
+  - href: /link.html
     label: 友链
     target: _self
 
-  -
-    href: /about.html
+  - href: /about.html
     label: 关于
     target: _self
 
 
 # Navigation. If you do not like these modules, just remove them :D
 navs:
-  -
-    href: /
+  - href: /
     label: Home
 
   - href: /java.html
@@ -99,8 +96,7 @@ navs:
       - subHref: /spark.html
         subLabel: Spark
 
-  -
-    href: /PHP.html
+  - href: /PHP.html
     label: PHP
     target: _self
     subnav:
@@ -113,23 +109,19 @@ navs:
     label: Python
     target: _self
     subnav:
-      -
-        subHref: /python.html
+      - subHref: /python.html
         subLabel: Python技术
-      -
-        subHref: /python-base.html
+      - subHref: /python-base.html
         subLabel: Python基础
 
-  -
-    href: /archives.html
+  - href: /archives.html
     label: Archives
 
 
 # labels. my blog key words
 labels:
 
-  -
-    href: /Tool.html
+  - href: /Tool.html
     name: 工具
 
   - href: /mysql.html
@@ -143,8 +135,7 @@ classes:
   - href: /bigdata.html
     name: 大数据
     describe: 大数据浪潮
-  -
-    href: /Tool.html
+  - href: /Tool.html
     name: 工具
     describe: 工欲善其事，必先利其器
 
@@ -164,8 +155,8 @@ side_bar_repo_limit: 5 # Number of repos to show
 # Google Analytics
 # analytics :
 # provider : google
-google :
-  tracking_id : 'UA-131499684-1'
+google:
+  tracking_id: 'UA-131499684-1'
 
 # ---------------- #
 #      Comments    #
