@@ -14,7 +14,8 @@
           content="{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' |  prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "
+    /feed.xml" | prepend: site.url }}">
 
     <!-- Third-Party CSS -->
     <link rel="stylesheet" href="{{site.static-url}}/bootstrap/dist/css/bootstrap.min.css">
@@ -22,7 +23,8 @@
     <link rel="stylesheet" href="{{site.static-url}}/hover/css/hover-min.css">
     <link rel="stylesheet" href="{{site.static-url}}/primer-markdown/dist/user-content.min.css">
     <link rel="stylesheet" href="{{site.static-url}}/assets/css/gitalk.css?version={{site.static-url-version}}">
-    <link rel="stylesheet" href="{{site.static-url}}/font-awesome/css/font-awesome.min.css?version={{site.static-url-version}}">
+    <link rel="stylesheet"
+          href="{{site.static-url}}/font-awesome/css/font-awesome.min.css?version={{site.static-url-version}}">
 
     <link rel="stylesheet" href="{{site.static-url}}/assets/css/syntax.css">
     <!-- My CSS -->
@@ -42,17 +44,18 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes"/>
     <style type="text/css">
-        .post-list>.post-list-item>.com-topic-tag{
+        .post-list > .post-list-item > .com-topic-tag {
             /*position:relative;*/
-            box-sizing:border-box;
-            display:flex;
-            flex-wrap:wrap;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
         }
-        .post-list > .post-list-item > .com-topic-tag > .post-list-public-date{
-            font-size:16px;
-            font-weight:400;
-            color:#828a92;
-            margin-left:67%
+
+        .post-list > .post-list-item > .com-topic-tag > .post-list-public-date {
+            font-size: 16px;
+            font-weight: 400;
+            color: #828a92;
+            margin-left: 67%
         }
 
         .post-list > .post-list-item > .com-topic-tag > .com-topic-title {
@@ -91,6 +94,10 @@
 
             .rss {
                 display: none
+            }
+
+            .scrolltop {
+                text-align: center
             }
         }
     </style>
