@@ -15,7 +15,7 @@ tags: [mysql]
 - 场景一：根据订单状态统计订单数量。
 一个很常见，也很简单的统计需求。其中状态字段是订单实体的一个属性。参考代码：（Kotlin语法
 
-```
+```mysql
 @Query("SELECT status, COUNT(id) FROM Order GROUP BY status")
 fun summaryOrderByStatus(): Array<Array<String>>?
 ```
@@ -23,7 +23,7 @@ fun summaryOrderByStatus(): Array<Array<String>>?
 - 场景二：根据订单中商品类目统计订单数量和金额。
 比场景一稍微麻烦了一点，商品字段是订单实体的一个属性，而类目字段才是商品实体的一个属性。参考代码：（Kotlin语法）
 
-```$xslt
+```mysql
 @Query("SELECT commodity.category, COUNT(id), SUM(finalPrice) FROM Order GROUP BY commodity.category")
 fun summaryOrderByCommodityCategory(): Array<Array<String>>?
 ```
@@ -43,7 +43,7 @@ fun summaryOrderByCommodityCategory(): Array<Array<String>>?
 - 场景三：统计结果日期可能不连续
 如果数据库中某个时间段没有值，那统计出来的结果会缺这段时间。参考代码：（sql语句）
 
-```$xslt
+```mysql
 -- 统计每日
 SELECT DATE_FORMAT(create_date,'%Y-%m-%d') as days, COUNT(id) count FROM order GROUP BY days;
 -- 统计每周
@@ -63,7 +63,7 @@ SELECT DATE_FORMAT(create_date,'%Y-%m') as months, COUNT(id) count FROM order GR
 
 第二步参考代码（Kotlin语法）
 
-```$xslt
+```mysql
 val startDate = Calendar.getInstance()
 startDate.set(2018, 6, 1)
 val startTIme = startDate.timeInMillis
@@ -85,7 +85,7 @@ dateSummaryRepository.saveAll(dates)
 
 第三步统计每日的SQL语句
 
-```$xslt
+```mysql
 SELECT
    summary.oneDay,
    summary.count 
@@ -126,7 +126,7 @@ ORDER BY
 - 场景五：根据小区年龄段统计人数
 只根据年龄范围统计，没有其他限制条件，使用SUM只需要加一。
 
-```$xslt
+```mysql
 SELECT INTERVAL(age,10,20,30,40,50,60,70,80,90) AS ageRatio, 
 SUM(1) AS count FROM user GROUP BY ageRatio
 ```
@@ -134,7 +134,7 @@ SUM(1) AS count FROM user GROUP BY ageRatio
 - 场景六：根据小区年龄段统计男女人数
 在场景五的基础上多了一个区分性别，用流程控制函数来设置SUM加一的情况。
 
-```$xslt
+```mysql
 SELECT INTERVAL(age,10,20,30,40,50,60,70,80,90) AS ageRatio, 
 SUM(CASE WHEN sex=1 THEN 1 ELSE 0 END) AS male,
 SUM(CASE WHEN sex=0 THEN 1 ELSE 0 END) AS female FROM user GROUP BY ageRatio
@@ -184,7 +184,7 @@ SUM(CASE WHEN sex=0 THEN 1 ELSE 0 END) AS female FROM user GROUP BY ageRatio
 1. case when then else end 是流程控制函数中的一种，还有一种是if函数
 2. 使用语法：
 
-```$xslt
+```mysql
 case 
 when 条件1 then 值1
 when 条件2 then 值2

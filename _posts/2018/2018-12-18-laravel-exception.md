@@ -42,7 +42,9 @@ tags: [Laravel]
 这样的好处就是，你的逻辑完全分离，不要再在业务逻辑代码里面考虑如何返回什么页面，要跳转到哪里，只考虑抛出合适的异常即可，简单的可以直接在  App\Exceptions\Handler  定义通用的捕获异常处理方式，这样的表现就非常统一了。如果需求高了，可以  try catch  后再根据情况再抛更详细的异常。
 
 ### 实践
-```$xslt
+
+```php
+
 public function update($id)
 {
     // 过去你可能这么写
@@ -66,8 +68,9 @@ public function update($id)
 }
 ```
 
-```$xslt
-// App\Exceptions\Handler.php 
+```php
+
+# App\Exceptions\Handler.php 
 public function render($request, Exception $e)
 {
     // 没有权限访问
@@ -105,4 +108,4 @@ public function render($request, Exception $e)
 或者使用 Bugsnag 进行异常记录和分析。可参见 @Summer 的 https://laravel-china.org/topics/290
 
 ### 总结
- 异常 对我们 控制程序的流程 来说非常重要。解耦了程序出现意想不到结果时信息传递的逻辑。每个业务模块发生异常最终通过  Laravel  的方便的异常处理，和友好的展示，并能根据情况来记录错误，这样让我们的程序更加健壮，方便开发和维护。
+异常对我们控制程序的流程来说非常重要。解耦了程序出现意想不到结果时信息传递的逻辑。每个业务模块发生异常最终通过 Laravel 的方便的异常处理，和友好的展示，并能根据情况来记录错误，这样让我们的程序更加健壮，方便开发和维护。

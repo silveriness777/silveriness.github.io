@@ -38,7 +38,7 @@ Preferences -> Profiles -> Text -> Text Rendering 把 Draw bold text in bright c
 通过在.zshrc中配置alias，可以方便的为其他的命令设置别名，这是个很不错的功能.
 `vim ~/.zshrc`
 
-```angular2
+```
 # For git
 alias gs="git status"
 alias ga='git add'

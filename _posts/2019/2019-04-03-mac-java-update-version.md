@@ -24,7 +24,7 @@ Mac使用时，怎么去除修改系统默认Java版本
 ### 查看更新后的版本
 `java -version`
 
-```$xslt
+```
 ➜  ~ java -version
 java version "1.8.0_191"
 Java(TM) SE Runtime Environment (build 1.8.0_191-b12)
