@@ -14,7 +14,8 @@ CentOS 7.0默认使用的是firewall作为防火墙。
 ### firewall的基本启动/停止/重启命令
 
 #### 查看防火墙状态
-```linux
+
+```
 [root@application-server ~]# firewall-cmd --state
 running
 ```
