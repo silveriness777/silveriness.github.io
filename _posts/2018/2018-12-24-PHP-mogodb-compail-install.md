@@ -5,9 +5,6 @@ category: PHP
 tags: [PHP]
 ---
 
-
-mongodb编译以及安装配置相关
-
 ## 目录
 
 ### 创建mongodb用户组和用户
@@ -19,8 +16,8 @@ useradd -r -g mongodb -s /sbin/nologin -M mongodb
 
 ### 下载加压mongodb包
 ```
-tar -zxf mongodb-linux-x86_64-rhel62-3.2.10.tgz
-
+wget  https://pecl.php.net/get/mongodb-1.5.5.tgz
+tar -zxf mongodb-1.5.5.tgz
 ```
 
 ### 创建mongodb相关模目录
@@ -34,7 +31,7 @@ mkdir -p /data/log/mongodb
 ### 将文件复制到mongodb/目录
 
 ```
-cp -R /date/pkg/mongodb-linux-x86_64-rhel62-3.2.10/. /usr/local/mongodb
+cp -R /date/pkg/mongodb-1.5.5/. /usr/local/mongodb
 ```
 
 ### 创建mongodb配置文件mongodb.conf
@@ -201,10 +198,6 @@ service mongod start
 ps -ef | grep mongod
 netstat -anp | grep  27017
 ```
-
-
-
-
 
 
 
