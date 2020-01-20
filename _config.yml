@@ -64,6 +64,10 @@ paginate_path: 'page:num'
 
 # Navigation. top menu list
 menus:
+  - href: /blog.html
+    label: 分类
+    target: _self
+
   - href: /link.html
     label: 友链
     target: _self
