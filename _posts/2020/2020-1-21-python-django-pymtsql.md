@@ -3,8 +3,8 @@ layout: post
 title:  django2.2 和 PyMySQL版本兼容问题
 category: python
 tags: Pythpn 
-keywords: Python django.core.exceptions.ImproperlyConfigured: mysqlclient 1.3.13 or newer is required; you have 0.9.3.
-excerpt: "django.core.exceptions.ImproperlyConfigured: mysqlclient 1.3.13 or newer is required; you have 0.9.3. 问题解决"
+keywords: Python PyMySQL
+excerpt: "错误信息为：`django.core.exceptions.ImproperlyConfigured: mysqlclient 1.3.13 or newer is required; you have 0.9.3.`"
 ---
 ## django2.2 和 PyMySQL版本兼容问题
 
