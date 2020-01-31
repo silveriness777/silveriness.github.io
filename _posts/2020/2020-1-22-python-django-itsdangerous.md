@@ -69,7 +69,7 @@ print(res)
 ```
 
 ### 使用实例三
-```
+```python
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 
 salt='abcdefg'  # 这里就是配置加密的规则
