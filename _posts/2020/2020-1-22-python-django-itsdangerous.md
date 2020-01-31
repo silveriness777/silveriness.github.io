@@ -8,7 +8,6 @@ excerpt: "有时您只想将一些数据发送到不受信任的环境。但是�
 ---
 
 ## 目录
-
 ### itsdangerous 简介
 有时您只想将一些数据发送到不受信任的环境。但是如何安全地做到这一点？诀窍就是签名。只要知道一个密钥，您就可以对数据进行加密签名并将其移交给其他人。当您取回数据时，可以轻松确保没有人篡改数据。使用[itsdangerous](https://pythonhosted.org/itsdangerous/)可以实现此种方案。
 
@@ -17,7 +16,7 @@ excerpt: "有时您只想将一些数据发送到不受信任的环境。但是�
 pip install itsdangerous
 ```
 
-### 使用实例1
+### 使用实例一
 ```python
 import itsdangerous
 
@@ -44,7 +43,7 @@ print(res)
 # 当超时或值有误则会报错
 ```
 
-### 使用实例2
+### 使用实例二
 ```python
 import itsdangerous
 
@@ -67,6 +66,27 @@ print(res)
 
 
 # 当超时或值有误则会报错
+```
+
+### 使用实例三
+```
+from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
+
+salt='abcdefg'  # 这里就是配置加密的规则
+serializer=Serializer(salt,expires_in=3600)  # 过期时间一小时，
+info = {'confirm':1}
+# 加密阶段
+res=serializer.dumps(info)# 得到加密后的数据，会返回一个字节类型的数据
+token=res.decode()  # 解码为str
+print(token)
+# 得到的数据如下，就是包含数据和盐值的token了，只有在知道盐值的时候才能被解密出来
+#eyJhbGciOiJIUzUxMiIsImlhdCI6MTU2MjY0Nzg4NCwiZXhwIjoxNTYyNjUxNDg0fQ.eyJjb25maXJtIjo1fQ.93DtXu9vHQDW0lr7saJhDBt-dcBxNNh_IMTR-JhWnrT-ujQ9SwevSUyW0p2txLS-gtyRHPlH1eD9INksIWilkA
+
+# 解密阶段
+res=serializer.loads(token)
+print(res)
+# 返回的数据如下：
+# {'confirm':1}
 ```
 
 ### 特殊说明
