@@ -138,15 +138,17 @@ labels:
 # selected articles
 classes:
   - href: /bigdata.html
-    name: 大数据
-    describe: 大数据浪潮
+    name: 大数据学习之路
+    describe: 用数据改变世界，让数据变成未来。
+
+  - href: /python.html
+    name: python成长之路
+    describe: 人生苦短，我学python
+
   - href: /Tool.html
     name: 工具
     describe: 工欲善其事，必先利其器
 
-  - href: /mysql.html
-    name: mysql
-    describe: 数据库
 
 
 # ---------------- #
