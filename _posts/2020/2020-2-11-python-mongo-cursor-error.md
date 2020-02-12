@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python mongo 错误处理：'IndexError: no such item for Cursor instance'
+title: python+mongo 错误处理：'IndexError: no such item for Cursor instance'
 category: python
 tags: Pythpn 
 keywords: Python 
