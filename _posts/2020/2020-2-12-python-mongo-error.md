@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  python mongo 错误处理：IndexError: no such item for Cursor instance
+title: python mongo 错误处理：IndexError: no such item for Cursor instance
 category: python
-tags: Pythpn
-keywords: Python mongo ndexError: no such item for Cursor instance
+tags: python
+keywords: Python mongo IndexError: no such item for Cursor instance
 excerpt: "打印输出提示IndexError: no such item for Cursor instance，大意为：Cursor实例没有对应的节点，这样的问题该怎样解决呢？"
 ---
 
