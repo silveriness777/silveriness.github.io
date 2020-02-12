@@ -7,10 +7,8 @@ keywords: Python mongo IndexError: no such item for Cursor instance
 excerpt: "打印输出提示IndexError: no such item for Cursor instance，大意为：Cursor实例没有对应的节点，这样的问题该怎样解决呢？"
 ---
 
-
 ## 目录
 ### 错误信息
-
 ```
 IndexError: no such item for Cursor instance
 ```
