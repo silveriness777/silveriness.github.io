@@ -8,7 +8,6 @@ excerpt: "本文主要对 mysql 配置文件中 max_connections 配置参数，�
 ---
 
 ## 目录
-
 ### 概述
 本文主要对 mysql 配置文件中 max_connections 配置参数，进行解析，其中包括参数作用，参数配置讲解，参数如何设置等。
 
@@ -22,7 +21,7 @@ MySQL无论如何都会保留一个用于管理员（SUPER）登陆的连接，�
 
 ### 如何查看当前mysql的max_connections的值
 
-```mysql
+```
 mysql> show variables like "max_connections";
 +-----------------+-------+
 | Variable_name   | Value |
@@ -43,7 +42,7 @@ mysql> show global status like 'max_used_connections';
 max_used_connections / max_connections * 100% （理想值 ≈ 85%），如果 max_used_connections 跟 max_connections 相同那么就是max_connections 设置过低或者超过服务器负载上限了，低于10%则设置过大。
 
 ### 如何查看正在连接中的进程
-```mysql
+```
 mysql> show processlist;
 +-----+------+-----------+------+---------+------+----------+------------------+
 | Id  | User | Host      | db   | Command | Time | State    | Info             |
@@ -56,7 +55,7 @@ mysql> show processlist;
 ### 怎样调整max_connections的值
 
 #### 1. 具备操作权限的账户，命令行设置
-```mysql
+```
 mysql> set global max_connections = 500;
 Query OK, 0 rows affected (0.01 sec)
 
@@ -86,3 +85,5 @@ max_connections = 1000
 ### 特殊说明
 总体来说，max_connections 参数在服务器资源够用的情况下应该尽量设置大，以满足多个客户端同时连接的需求。否则将会出现类似”Too many connections”的错误。
 具体设置时可以使用一个比较综合的数据， 个人设置一般是看服务器性能，以及观察当前连接数，从而选择一个合适的值。
+
+用一个比较综合的数据， 个人设置一般是看服务器性能，以及观察当前连接数，从而选择一个合适的值。
