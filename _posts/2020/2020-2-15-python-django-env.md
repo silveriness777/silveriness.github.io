@@ -8,16 +8,19 @@ excerpt: "本文主要是整理如何在 django  项目中解决不同环境下�
 ---
 
 ## 目录
+
 ### 简述
 本文主要是整理如何在 django  项目中解决不同环境下加载不同 .env  环境配置文件的方案。主要内容包含 django-environ  的安装使用，以及 django-crontab 脚本环境下的配置使用。
 
 ### django-environ 的使用
 
-#### 安装
-[官方 django-environ  github链接地址](https://django-environ.readthedocs.io/en/latest/)
-` pip install django-environ`
+1. 安装
 
-#### 使用
+[官方 django-environ  github链接地址](https://django-environ.readthedocs.io/en/latest/)
+
+`pip install django-environ`
+
+2. 使用
 
 - 创建 .env文件
 
@@ -75,17 +78,17 @@ CACHES = {
 这个环境变量就没法写在 .env 文件了，必须手动指定。假设我们这个环境变量叫PROJECT_ENV。那么我们在命令行执行任何命令的时候，在前面加上PROJECT_ENV=xxx来指定环境变量。
 当然，也可以export来指定这个环境变量，也可以修改shell配置文件来指定这个环境变量，甚至supervisord和uwsgi的配置文件也可以指定环境变量。
 
-#### 执行方法
+1. 执行方法
 ```
 PROJECT_ENV=local python manage.py runserver
 ```
 
-#### 多环境.env文件设置
+2. 多环境.env文件设置
 假设目前存在 local 以及 product 两种环境，则在 envs 下新建 .env.local 以及 .env.product 文件。
 
-#### settings.py 代码兼容
+3. settings.py 代码兼容
 
-```
+```python
 import os
 import environ
 import logging.config
@@ -108,14 +111,13 @@ env_name = env.str('PROJECT_ENV', 'local')
 env.read_env('envs/.env.%s' % env_name)
 ```
 
-#### 如何在 django-crontab 脚本环境下加载不同配置
+### 如何在 django-crontab 脚本环境下加载不同配置
 
-#### django-crontab 的使用可以参考 [django-crontab实现服务端的定时任务](https://www.studytime.xin/python/2020/02/11/python-django-crontab.html)
+1. django-crontab 的使用可以参考 [django-crontab实现服务端的定时任务](https://www.studytime.xin/python/2020/02/11/python-django-crontab.html)
 
-#### 代码调整
+2. 代码调整
 在 settings.py 文件中，django-crontab 配置任务 CRONJOBS 下增加
-`
-CRONTAB_COMMAND_PREFIX = 'PROJECT_ENV=' + env_name` 参数指定
+`CRONTAB_COMMAND_PREFIX = 'PROJECT_ENV=' + env_name` 参数指定
 
 ```
 CRONJOBS = [
@@ -125,7 +127,8 @@ CRONJOBS = [
 CRONTAB_COMMAND_PREFIX = 'PROJECT_ENV=' + env_name
 ```
 
-#### 执行方法
+3. 执行方法
+
 ```
 PROJECT_ENV=local python manage.py crontab add
 ```
