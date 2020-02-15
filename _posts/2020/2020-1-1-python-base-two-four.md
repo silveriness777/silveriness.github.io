@@ -2,7 +2,7 @@
 layout: post
 title: Python基础(二)：数据类型-dict字典
 category: python-base
-tags: Pythpn 
+tags: python 
 keywords: Python 
 excerpt: "字典，是一系列的键值对"
 ---

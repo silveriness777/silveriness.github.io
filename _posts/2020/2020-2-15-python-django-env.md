@@ -2,7 +2,7 @@
 layout: post
 title: 'Django 项目如何通过加载不同env文件来区分不同环境'
 category: python
-tags: Pythpn
+tags: python
 keywords: Python django-environ
 excerpt: "本文主要是整理如何在 django  项目中解决不同环境下加载不同 .env  环境配置文件的方案。主要内容包含 django-environ  的安装使用，以及 django-crontab 脚本环境下的配置使用。"
 ---

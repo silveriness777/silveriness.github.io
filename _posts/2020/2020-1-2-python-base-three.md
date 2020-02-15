@@ -2,7 +2,7 @@
 layout: post
 title:  Python基础(三)：判断语句和循环语句
 category: python-base 
-tags: Pythpn 
+tags: python 
 keywords: Python 
 excerpt: "条件判断语句和循环语句都是编写代码中经常用到的语句"
 ---

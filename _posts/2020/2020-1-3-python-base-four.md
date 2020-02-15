@@ -2,7 +2,7 @@
 layout: post
 title:  Python基础(四)：函数
 category: python-base 
-tags: Pythpn 
+tags: python 
 keywords: Python 
 excerpt: "为了提高编写的效率以及代码的重用，把具有独立功能的代码块组织为一个小模块，这就是函数。"
 ---

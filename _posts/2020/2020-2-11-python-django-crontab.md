@@ -2,7 +2,7 @@
 layout: post
 title: python模块：django-crontab实现服务端的定时任务
 category: python
-tags: Pythpn
+tags: python
 keywords: Python
 excerpt: "公司 Django 应用中需要添加定时任务来定时执行一些数据清洗的功能，因此想到了使用 django-crontab 插件可以满足我的需求，下面就是这个插件的使用方法。"
 ---

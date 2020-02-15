@@ -2,7 +2,7 @@
 layout: post
 title:  Python基础(一)：初始python和基础知识
 category: python-base
-tags: Pythpn 
+tags: python 
 keywords: Python 
 excerpt: "python 的创始人为吉多·范罗苏姆（Guido van Rossum）。1989年的圣诞节期间，吉多·范罗苏姆为了打发无聊的圣诞节而用C编写的一个编程语言。"
 ---

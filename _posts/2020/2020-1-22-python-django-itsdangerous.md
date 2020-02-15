@@ -2,7 +2,7 @@
 layout: post
 title:  python模块：itsdangerous模块
 category: python
-tags: Pythpn itsdangerous
+tags: python 
 keywords: Python itsdangerous
 excerpt: "有时您只想将一些数据发送到不受信任的环境。但是如何安全地做到这一点？诀窍就是签名。只要知道一个密钥，您就可以对数据进行加密签名并将其移交给其他人。当您取回数据时，可以轻松确保没有人篡改数据。使用itsdangerous可以实现此种方案。"
 ---

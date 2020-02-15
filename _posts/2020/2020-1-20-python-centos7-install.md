@@ -2,7 +2,7 @@
 layout: post
 title:  centos7 下安装python3与python2共存
 category: python
-tags: Pythpn 
+tags: python 
 keywords: Python 
 excerpt: "系统默认安装版本为2.7.5,但目前还有很多系统和软件使用的还是python2，所以python3与python2共存就需要此种情况"
 ---
