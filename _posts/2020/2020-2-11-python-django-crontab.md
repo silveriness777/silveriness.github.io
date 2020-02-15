@@ -2,8 +2,8 @@
 layout: post
 title: python模块：django-crontab实现服务端的定时任务
 category: python
-tags: Pythpn 
-keywords: Python 
+tags: Pythpn
+keywords: Python
 excerpt: "公司 Django 应用中需要添加定时任务来定时执行一些数据清洗的功能，因此想到了使用 django-crontab 插件可以满足我的需求，下面就是这个插件的使用方法。"
 ---
 
@@ -40,6 +40,41 @@ CRONJOBS=(
     ('10 12 * * *', 'django.core.management.call_command', ['要执行的命令']),
 )
 ```
+
+### 官方demo
+```python
+CRONJOBS = [
+    ('*/5 * * * *', 'myapp.cron.my_scheduled_job'),
+
+    # format 1
+    ('0   0 1 * *', 'myapp.cron.my_scheduled_job', '>> /tmp/scheduled_job.log'),
+
+    # format 2
+    ('0   0 1 * *', 'myapp.cron.other_scheduled_job', ['myapp']),
+    ('0   0 * * 0', 'django.core.management.call_command', ['dumpdata', 'auth'], {'indent': 4}, '> /home/john/backups/last_sunday_auth_backup.json'),
+]
+```
+
+
+### 上述demo参数说明
+- 参数1：定时 例如47 11 * * * 表示每天的11时47分执行
+- 参数2：方法的python模块路径，如果执行django-admin命令，则写django.core.management.call_command
+- 参数3：方法的位置参数列表（默认值：[]），如果执行django-admin命令，则填写所需执行的命令，例如我们在polls中已经定义过的closepoll
+- 参数4：方法的关键字参数的dict（默认值：{}）
+- 参数5：执行log存放位置（即重定向到文件，默认：''）
+
+### 其余参数说明
+- CRONTAB_LOCK_JOBS
+- CRONTAB_EXECUTABLE
+- CRONTAB_DJANGO_PROJECT_NAME
+- CRONTAB_DJANGO_MANAGE_PATH
+- CRONTAB_DJANGO_SETTINGS_MODULE
+- CRONTAB_PYTHON_EXECUTABLE
+- CRONTAB_COMMAND_PREFIX
+- CRONTAB_COMMAND_SUFFIX
+- CRONTAB_COMMENT
+
+具体使用方法参考官方使用文档 ，有很详细的说明。
 
 ### 在app中（与views.py同级）新建cron.py文件（文件名不限定）
 ```python
@@ -84,3 +119,6 @@ eg：
 ```python
   ('*/ * * * *', 'appname.cron.test','> appname.txt'),
 ```
+
+### 参考文档
+[django-crontab  github地址](https://github.com/kraiz/django-crontab)
