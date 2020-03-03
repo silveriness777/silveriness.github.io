@@ -4,8 +4,7 @@ title: 'Laravel/Lumen 5.6后自定义错误日志格式过滤堆栈信息'
 category: PHP
 tags: PHP
 keywords: PHP Laravel Laravel5.6 Laravel5.8 laravel异常日志堆栈
-excerpt: "Laravel/Lumen的日志默认是基于Monolog进行的一层封装，简单使用的话文档还是很清晰的。但是当我希望过滤错误日志里面的大量堆栈时候，以及一些其他自定义配置时，发现5.6版本之后对日志系统做了升级。原有的configureMonologUsing自定义Monolog设置已经废弃。参照新的文档和源码，重新做了封装后，基本解决异常日志堆栈问题。
-"
+excerpt: "Laravel/Lumen的日志默认是基于Monolog进行的一层封装，简单使用的话文档还是很清晰的。但是当我希望过滤错误日志里面的大量堆栈时候，以及一些其他自定义配置时，发现5.6版本之后对日志系统做了升级。原有的configureMonologUsing自定义Monolog设置已经废弃。参照新的文档和源码，重新做了封装后，基本解决异常日志堆栈问题。"
 ---
 
 ## 目录
