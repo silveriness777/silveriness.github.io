@@ -42,7 +42,9 @@ systemctl enable supervisord
 
 #### 启动supervisord服务
 ```
-systemctl status supervisord
+systemctl start supervisord
+# 重启
+systemctl restart supervisord
 ```
 
 #### 查看supervisord服务状态
@@ -152,7 +154,6 @@ supervisorctl start larashop-worker:*
 # 查看状态
 supervisorctl status 
 ```
-
 
 ### 常见问题以及说明
 
