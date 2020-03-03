@@ -53,6 +53,7 @@ return [
 
 #### 日志使用
 ```
+
 <?php
 use Log;
 
@@ -73,7 +74,7 @@ class LogTestController extends Controller
 有时需要完全控制已存在通道的 Monolog： 比如，你可能想要为给定通道的日志处理配置自定义的 Monolog FormatterInterface 实现：
 
 先在通道配置中定义一个 tap 数组。 tap 数组包含一个在通道创建后有机会用于自定义 Monolog 实例的类列表：
-```
+```php
 'single' => [
     'driver' => 'single',
     'tap' => [App\Logging\CustomizeFormatter::class],
@@ -83,7 +84,7 @@ class LogTestController extends Controller
 ```
 
 一旦在通道中有了 tap 选项配置，就要准备用于自定义 Monolog 实例的类。这种类这需要一个方法： __invoke，它接受一个 Illuminate\Log\Logger 实例作为其参数。 Illuminate\Log\Logger 实例将所有方法调用代理到基础的 Monolog 实例：
-```
+```php
 <?php
 
 namespace App\Logging;
@@ -110,7 +111,7 @@ Tip：所有的 "tap" 类都是由 服务容器 解析的，因此任何依赖�
 ### 如何实现自定义错误日志格式、过滤大量异常日志堆栈 
 
 #### 在 config/logging.php 创建对应的处理渠道
-```
+```php
 'channels' => [
     'custom' => [
         'driver' => 'daily',
