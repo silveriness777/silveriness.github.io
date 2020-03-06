@@ -7,8 +7,6 @@ keywords: Python virtualenv虚拟环境 mac
 excerpt: "virtualenv 官方文档对virtualenv的解释是:virtualenv is a tool to create isolated Python environments。用它可以创建一个独立的 Python 环境，每个项目都可以有一个专属环境，避免了不同各种包安装冲突以及版本要求问题，可以让你更方便快捷的切换不同 Python 环境，更高效的开发。"
 ---
 
-## 目录
-
 ### 简介
 virtualenv 官方文档对virtualenv的解释是:virtualenv is a tool to create isolated Python environments。
 用它可以创建一个独立的 Python 环境，每个项目都可以有一个专属环境，避免了不同各种包安装冲突以及版本要求问题，可以让你更方便快捷的切换不同 Python 环境，更高效的开发。
@@ -44,24 +42,16 @@ source ~/.bash_profile
 ```
 
 ### 创建虚拟环境
-```
-mkvirtualenv djangodevenv(虚拟环境名称)
-```
+`mkvirtualenv djangodevenv(虚拟环境名称)`
 
 ### 使用(进入)虚拟环境
-```
-workon djangodevenv(虚拟环境名称)
-```
+`workon djangodevenv(虚拟环境名称)`
 
 ### 退出虚拟环境
-```
-deactivate
-```
+`deactivate`
 
 ### 查看所有虚拟环境
-```
-workon 两次tab键
-```
+`workon 两次tab键`
 
 ### 删除虚拟环境
 ```
@@ -81,8 +71,6 @@ rmvirtualenv djangodevenv(虚拟环境名称)
 如果此处报Could not open requirements file: [Errno 2] No such file or directory: './requirements.txt'，直接进行下一步命令
 
 #### 生成依赖包,须在虚拟环境中
-```
-pip freeze > requirements.txt
-```
+`pip freeze > requirements.txt`
 
 至此，Python虚拟环境Virtualenv安装流程完毕，你可以在你自己的虚拟环境下随意安装各种包，不同项目间也不会相互影响了。
