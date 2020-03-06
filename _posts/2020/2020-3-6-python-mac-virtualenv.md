@@ -20,6 +20,7 @@ pip install virtualenv
 ```
 sudo pip install virtualenvwrapper
 ```
+## 目录
 
 ### 查找virtualenvwrapper.sh文件的路径
 ```
