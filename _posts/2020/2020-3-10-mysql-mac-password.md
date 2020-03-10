@@ -19,7 +19,8 @@ mac下mysql忘记root用户密码，怎么进行重置？
 2. 打开命令行输入：`sudo /usr/local/mysql/bin/mysqld_safe --skip-grant-tables`
 3. 打开另一个新终端：`sudo /usr/local/mysql/bin/mysql -u root`
 4. 重置密码
-```
+
+```mysql
 UPDATE mysql.user SET authentication_string=PASSWORD('新密码') WHERE User='root';
 FLUSH PRIVILEGES;
 ```
