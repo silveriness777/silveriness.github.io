@@ -2,7 +2,8 @@
 
 .site-header {
     color: #fff;
-    background: #4771c1;
+    /*background: #4771c1;*/
+    background: #4183c4;
 }
 
 .site-header #site-header-brand {
@@ -23,8 +24,8 @@
 .icon-logo{fill: #fff;}
 
 .jumbotron {
-    /*background: #4183c4;*/
-    background-image:url(https://static.studytime.xin/image/articles/spring-bootc10b457a89983f923b38b01681c922dbb9ba6e2c.svg)
+    background: #4183c4;
+    /*background-image:url(https://static.studytime.xin/image/articles/spring-bootc10b457a89983f923b38b01681c922dbb9ba6e2c.svg)*/
 }
 
 .site-header.site-header-nav-scrolled a {
