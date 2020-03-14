@@ -34,7 +34,7 @@ url: /link.html
 
 ## 个人链接
 - [studytime](https://www.studytime.xin/) - 个人博客
-- [github](https://github.com/MyStudytime) -  github地址
+- [github](https://github.com/mystudytime) -  github地址
 - [Segmentfault](https://segmentfault.com/u/baihe) - 技术博客
 
 ## 其它  

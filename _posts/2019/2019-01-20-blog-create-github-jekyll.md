@@ -44,7 +44,7 @@ jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和W
 ### 步骤详解
 
 #### 1. fork项目
-以我个人项目为例，打给地址`https://github.com/MyStudytime/studytime-Blog`，点击`Fork`按钮复制代码到自己的仓库。大概1分钟左右可以完成。
+以我个人项目为例，打给地址`https://github.com/mystudytime/studytime-Blog`，点击`Fork`按钮复制代码到自己的仓库。大概1分钟左右可以完成。
 ![](https://static.studytime.xin/image/articles/Blog/Blog-5.png)
 
 #### 2. 删除 CNAME 文件
