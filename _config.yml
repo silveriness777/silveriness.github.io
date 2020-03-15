@@ -25,7 +25,7 @@ zhihu_url: https://www.zhihu.com/people/mystudytime
 base_url: https://www.studytime.xin
 baseurl: ''
 enforce_ssl: https://www.studytime.xin
-static-url-version: 20200112
+static-url-version: 20200315
 
 ## Gem
 plugins:
