@@ -172,6 +172,6 @@ comments_provider: gitalk
 
 gitalk:
   owner: mystudytime
-  repo:  blog-comments
-  clientID: f2951c434919f3ebb0da
-  clientSecret: 3846a22cae7d971aa40ae159b53c3152f9ff6cd2
+  repo:  blog-comment
+  clientID: ee1ef635fe9c3cca9b01
+  clientSecret: f44aa75a8dac7674e614467f9d015d7ceb903e59
