@@ -126,7 +126,7 @@ navs:
 # labels. my blog key words
 labels:
 
-  - href: /Tool.html
+  - href: /tool.html
     name: 工具
 
   - href: /mysql.html
