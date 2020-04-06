@@ -7,9 +7,10 @@ keywords: mac Mac VMware Fusion centos7 静态ip
 excerpt: "介绍的Mac VMware Fusion CentOS7配置静态IP的教程图解,希望对大家有所帮助"
 ---
 
-\###
+## 目录
+###
 
-\### 安装CentOS7
+### 安装CentOS7
 
 ![](https://static.studytime.xin/image/articles/20200111133031.png)
 
@@ -25,13 +26,13 @@ excerpt: "介绍的Mac VMware Fusion CentOS7配置静态IP的教程图解,希望
 
 ![](https://static.studytime.xin/image/articles/20200111133202.png)
 
-\### 我们点击存储后，vmware会自动帮我们创建一个虚拟机，但是我们还没有添加镜像，所以需要先将其关机
+### 我们点击存储后，vmware会自动帮我们创建一个虚拟机，但是我们还没有添加镜像，所以需要先将其关机
 
 ![](https://static.studytime.xin/image/articles/20200111133217.png)
 
 ![](https://static.studytime.xin/image/articles/20200111133228.png)
 
-\### 给新创建的虚拟机设置镜像
+### 给新创建的虚拟机设置镜像
 
 ![](https://static.studytime.xin/image/articles/20200111133316.png)
 
@@ -45,17 +46,17 @@ excerpt: "介绍的Mac VMware Fusion CentOS7配置静态IP的教程图解,希望
 
 ![](https://static.studytime.xin/image/articles/20200111133404.png)
 
-\### 设置语言
+### 设置语言
 
 这里说一下设置成英文的原因，因为英文是更国际化的语言，设置成英文的以后系统出问题了就是英文错误提示，通过英文错误提示更容易在网络上搜到解决办法，用中文的话出错了的话比较难找到解决办法
 
 ![](https://static.studytime.xin/image/articles/20200111133434.png)
 
-\### 设置时区，默认的是纽约的，这里改成中国上海
+### 设置时区，默认的是纽约的，这里改成中国上海
 
 ![](https://static.studytime.xin/image/articles/20200111133442.png)
 
-\### 设置网络连接，以及主机名称等配置
+### 设置网络连接，以及主机名称等配置
 
 ![](https://static.studytime.xin/image/articles/20200405142018.png)
 
@@ -73,35 +74,35 @@ excerpt: "介绍的Mac VMware Fusion CentOS7配置静态IP的教程图解,希望
 
 ![](https://static.studytime.xin/image/articles/20200111133539.png)
 
-\### 设置root账号密码
+### 设置root账号密码
 
 ![](https://static.studytime.xin/image/articles/20200111133553.png)
 
-\### 配置静态IP
+### 配置静态IP
 
-\#### 把网络配置改成nat模式
+#### 把网络配置改成nat模式
 
 ![](https://static.studytime.xin/image/articles/20200111133602.png)
 
 ![](https://static.studytime.xin/image/articles/20200111133613.png)
 
-\#### 通过Mac终端进入VMware Fusion的vmnet8目录`cd /Library/Preferences/VMware\ Fusion/vmnet8`
+#### 通过Mac终端进入VMware Fusion的vmnet8目录`cd /Library/Preferences/VMware\ Fusion/vmnet8`
 
 ![](https://static.studytime.xin/image/articles/20200111133738.png)
 
-\#### 查看nat.conf内容`cat nat.conf`
+#### 查看nat.conf内容`cat nat.conf`
 
 记住红框中的数据，下面配置时需要用到
 
 ![](https://static.studytime.xin/image/articles/20200111133850.png)
 
-\#### 查看cat dhcpd.conf内容`cat dhcpd.conf`
+#### 查看cat dhcpd.conf内容`cat dhcpd.conf`
 
 ![](https://static.studytime.xin/image/articles/20200111135915.png)
 
 注意range 这个是虚拟机允许选择的静态ip地址范围，自定义的静态ip地址必须要在这个范围内(本文打算使用172.16.104.130为例介绍)
 
-\#### 获取DNS(在mac系统偏好设置—>网络—>)
+#### 获取DNS(在mac系统偏好设置—>网络—>)
 
 ![](https://static.studytime.xin/image/articles/20200111134020.png)
 
@@ -109,7 +110,7 @@ excerpt: "介绍的Mac VMware Fusion CentOS7配置静态IP的教程图解,希望
 
 ![](https://static.studytime.xin/image/articles/20200111135749.png)
 
-\#### 登录CentOS7、开始配置静态ip
+#### 登录CentOS7、开始配置静态ip
 
 ![](https://static.studytime.xin/image/articles/20200111135249.png)
 
@@ -169,11 +170,11 @@ DNS2=8.8.4.4
 
 \```
 
-\#### 保存之后，重启服务使修改生效`service network restart`
+#### 保存之后，重启服务使修改生效`service network restart`
 
 ![](https://static.studytime.xin/image/articles/20200111135338.png)
 
-\#### 需要能ping外网，修改/etc/resolv.conf即可
+#### 需要能ping外网，修改/etc/resolv.conf即可
 
 \```
 
@@ -189,11 +190,11 @@ nameserver 8.8.4.4
 
 说明：如果不设置此步骤，可能会出现提示 `ping: baidu.com: 未知的名称或服务`
 
-\#### ping一下百度看看，成功Ping到
+#### ping一下百度看看，成功Ping到
 
 ![](https://static.studytime.xin/image/articles/20200111135413.png)
 
-\#### 软件连接
+#### 软件连接
 
 ![](https://static.studytime.xin/image/articles/20200111135437.png)
 
