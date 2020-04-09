@@ -181,7 +181,10 @@ The key's randomart image is:
 1. 将node1的公钥拷贝到node2,node3上
 2. 将node2的公钥拷贝到node1,node3上
 3. 将node3的公钥拷贝到node1,node2上
+
 以下以node1为例执行秘钥复制命令：ssh-copy-id -i 主机名
+
+
 ```
 [root@node1 ~]# ssh-copy-id -i node2
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
