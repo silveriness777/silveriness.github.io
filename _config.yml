@@ -18,13 +18,13 @@ static-url: https://static.studytime.xin/studytime-Blog
 
 repository: mystudytime/studytime-blog
 github_url: https://github.com/mystudytime
-url: https://www.studytime.xin
+url: https://blog.studytime.xin
 
 sfblog_url: https://segmentfault.com/u/baihe
 zhihu_url: https://www.zhihu.com/people/mystudytime
-base_url: https://www.studytime.xin
+base_url: https://blog.studytime.xin
 baseurl: ''
-enforce_ssl: https://www.studytime.xin
+enforce_ssl: https://blog.studytime.xin
 static-url-version: 20200315
 
 ## Gem
